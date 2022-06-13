@@ -1,0 +1,20 @@
+.headtext{
+    color :black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.textfield{
+    height: 60px;
+    width: 350px;
+    background-color: #F6F6F6;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+}
