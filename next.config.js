@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/nextjs-pages",
-  assetPrefix: "/nextjs-pages",
+  basePath: "/LeadersCV",
+  assetPrefix: "/LeadersCV",
 }
 
 module.exports = nextConfig
