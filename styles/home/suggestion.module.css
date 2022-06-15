@@ -1,0 +1,21 @@
+.container {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 325px;
+    background-color: #B4C7EB ;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+
+
+    font-weight: bolder;
+    color: #002463;
+}
+
+.icon{
+    transform: rotate(-45deg);
+
+}

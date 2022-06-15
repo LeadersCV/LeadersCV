@@ -1,0 +1,27 @@
+.smallContainer{
+    position: relative;
+    bottom: 3vw;
+    right: -45vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.login{
+    text-decoration: none;
+    color: #002463;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.signup{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #FCB730;
+    padding:12px;
+    border-radius: 15px;
+}

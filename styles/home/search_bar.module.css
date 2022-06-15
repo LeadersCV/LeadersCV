@@ -1,0 +1,34 @@
+.searchBar{
+  background-color: #EFEEEE;
+  height: 50px;
+  width: 40vw;
+  outline: none;
+  border: none;
+  margin-top: 5vh;
+
+  margin-bottom: 3vh;
+  padding-left: 1em;
+  border-radius: 5px 0px 0px 5px;
+
+  font-weight: bolder;
+  font-size: 20;
+  color: #002463;
+
+}
+
+.searchBar::placeholder{
+    font-weight: bolder;
+}
+
+.searchButton{
+    color: white;
+    height: 50px;
+    width: 90px;
+
+    border: none;
+    border-radius: 0px 5px 5px 0;
+    background-color: #002463;
+
+    font-weight: bold;
+    font-size: 18px;
+}
