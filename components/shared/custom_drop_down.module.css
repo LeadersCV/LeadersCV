@@ -1,0 +1,23 @@
+.headtext {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.textfield {
+  width: 350px;
+  background-color: #f6f6f6;
+  border: none;
+  outline: none;
+}
+
+.container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-self: center;
+}
+
+.removeBorder {
+  border: none;
+  outline: none;
+}

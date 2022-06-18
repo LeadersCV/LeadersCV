@@ -1,4 +1,4 @@
-import classes from "../../styles/home/statistic_element.module.css";
+import classes from "./statistic_element.module.css";
 
 export default function StatisticElement(props: any) {
   return (

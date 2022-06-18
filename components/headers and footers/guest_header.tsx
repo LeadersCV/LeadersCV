@@ -1,6 +1,6 @@
 import HomeNavBar from "../shared/home_navbar";
 import LoginAndSignUpButtons from "../shared/login_signup_buttons";
-import classes from "../../styles/headers_&_footers.module.css";
+import classes from "./headers_&_footers.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,8 +11,8 @@ export default function GuestHeader() {
         <Link href="/">
           <Image
             src="/assets/Leaderscv_full_logo.png"
-            width={200}
-            height={50}
+            width={150}
+            height={37.5}
             priority
             className={classes.clickable}
           />

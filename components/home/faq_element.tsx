@@ -2,7 +2,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { AccordionDetails, Typography } from "@mui/material";
-import classes from "../../styles/home/faq.module.css";
+import classes from "./faq.module.css";
 
 export default function FAQElement(props: any) {
   return (

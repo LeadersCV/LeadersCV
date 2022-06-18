@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import classes from "../styles/home/home.module.css";
+import classes from "../components/home/home.module.css";
 import SearchBar from "../components/home/search_bar";
 import Suggestions from "../components/home/suggestions";
 import Statistics from "../components/home/statistics";

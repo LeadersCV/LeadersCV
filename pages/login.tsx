@@ -1,12 +1,12 @@
 import classes from "../styles/login/login.module.css";
 import CustomTextField from "../components/shared/custom_text_field";
 import CustomButton from "../components/shared/custom_button";
-import HomeNavBar from "../components/shared/home_navbar";
+import GuestHeader from "../components/headers and footers/guest_header";
 
 function LoginPage() {
   return (
     <div className={classes.container}>
-      <HomeNavBar />
+      <GuestHeader />
       <section className={classes.section}>
         <h1 className={classes.headline}>LOGIN</h1>
         <div className={classes.loginForm}>

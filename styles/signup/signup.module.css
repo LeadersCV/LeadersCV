@@ -1,0 +1,61 @@
+.headline {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  color: #002463;
+}
+
+.section {
+  margin-top: 20vh;
+  background-color: white;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: -1px 0px 14px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: -1px 0px 14px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 0px 14px 0px rgba(0, 0, 0, 0.36);
+  padding-bottom: 100px;
+  width: 50vw;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.createAccount {
+  text-decoration: underline;
+  justify-content: center;
+  color: #002463;
+  font-size: 14px;
+  font-weight: bolder;
+  align-self: center;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.signUpForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: gray;
+}

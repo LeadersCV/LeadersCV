@@ -1,4 +1,4 @@
-import classes from "../../styles/home/about.module.css";
+import classes from "./about.module.css";
 
 export default function About() {
   return (

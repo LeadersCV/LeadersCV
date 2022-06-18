@@ -1,4 +1,4 @@
-import classes from "../../styles/home/faq.module.css";
+import classes from "./faq.module.css";
 import FAQElement from "./faq_element";
 
 export default function FAQ() {

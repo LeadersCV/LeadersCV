@@ -1,4 +1,4 @@
-import classes from "../../styles/shared/custom_navbar.module.css";
+import classes from "./custom_navbar.module.css";
 import Link from "next/link";
 
 function HomeNavBar() {
@@ -7,7 +7,7 @@ function HomeNavBar() {
       <Link href="/">
         <a className={classes.navbarElements}>Home</a>
       </Link>
-      <Link href="#About">
+      <Link href="/#About">
         <a className={classes.navbarElements}> About us</a>
       </Link>
       <Link href="/create-your-cv">
@@ -15,10 +15,10 @@ function HomeNavBar() {
           <p className={classes.cvText}> Create your CV </p>
         </a>
       </Link>
-      <Link href="#Pricing">
+      <Link href="/#Pricing">
         <a className={classes.navbarElements}>Pricing</a>
       </Link>
-      <Link href="#FAQ">
+      <Link href="/#FAQ">
         <a className={classes.navbarElements}>FAQ</a>
       </Link>
     </nav>

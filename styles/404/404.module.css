@@ -1,0 +1,36 @@
+.title {
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.content {
+  font-size: 18;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 65vh;
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #002463;
+}
+
+.line {
+  margin: 25px 0px;
+  width: 75%;
+  border-top: 1px solid #002463;
+}
