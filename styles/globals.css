@@ -4,6 +4,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
   background-color: #D5E1F2 ;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

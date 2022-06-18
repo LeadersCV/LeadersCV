@@ -1,18 +1,18 @@
-.statisticElement{
-    border-radius: 125px 0px 125px 0px;
-    background-color: white;
-    height: 300px;
-    width: 300px;
-    text-align: center;
+.statisticElement {
+  border-radius: 125px 0px 125px 0px;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  text-align: center;
 }
 
-.number{
-    font-size: 75px;
-    font-weight: bolder;
-    color: #002463;
+.number {
+  font-size: 70px;
+  font-weight: bolder;
+  color: #002463;
 }
 
-.name{
-    font-weight: bold;
-    color: #002463;
+.name {
+  font-weight: bold;
+  color: #002463;
 }

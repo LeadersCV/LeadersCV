@@ -1,26 +1,25 @@
-import type { NextPage } from 'next'
-import CustomNavBar from '../components/shared/custom_navbar';
-import classes from '../styles/home/home.module.css';
-import Image from 'next/image';
-import SearchBar from '../components/home/search_bar';
-import Suggestions from '../components/home/suggestions';
-import Statistics from '../components/home/statistics';
-import LoginAndSignUpButtons from '../components/shared/login_signup_buttons';
+import type { NextPage } from "next";
+import classes from "../styles/home/home.module.css";
+import SearchBar from "../components/home/search_bar";
+import Suggestions from "../components/home/suggestions";
+import Statistics from "../components/home/statistics";
+import Pricing from "../components/home/pricing";
+import FAQ from "../components/home/faq";
+import About from "../components/home/about";
+import GuestHeader from "../components/headers and footers/guest_header";
 
 const Home: NextPage = () => {
   return (
     <div className={classes.container}>
-      <CustomNavBar />
-      <LoginAndSignUpButtons />
-      <div className={classes.mainImage}>
-        <Image src='/assets/Leaderscv_full_logo.png' width={400} height={100} />
-      </div>
+      <GuestHeader />
       <SearchBar />
       <Suggestions />
       <Statistics />
-
+      <Pricing />
+      <FAQ />
+      <About />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

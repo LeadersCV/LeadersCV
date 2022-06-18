@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(189, 195, 230);
+  padding-bottom: 40px;
+}
+
+.header {
+  font-size: 50px;
+  color: #002463;
+}
+
+.accordion {
+  width: 40%;
+}
+
+.question {
+  color: #002463;
+  font-size: 20;
+  font-weight: bold;
+}
+
+.answer {
+  font-size: 20;
+  font-weight: bold;
+}

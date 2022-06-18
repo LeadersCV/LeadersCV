@@ -1,5 +1,5 @@
-.searchBar{
-  background-color: #EFEEEE;
+.searchBar {
+  background-color: #efeeee;
   height: 50px;
   width: 40vw;
   outline: none;
@@ -13,22 +13,31 @@
   font-weight: bolder;
   font-size: 20;
   color: #002463;
-
+  transition: border-width 1s ease-in-out;
 }
 
-.searchBar::placeholder{
-    font-weight: bolder;
+.searchBar::placeholder {
+  font-weight: bolder;
 }
 
-.searchButton{
-    color: white;
-    height: 50px;
-    width: 90px;
+.searchButton {
+  color: white;
+  height: 50px;
+  width: 90px;
+  cursor: pointer;
 
-    border: none;
-    border-radius: 0px 5px 5px 0;
-    background-color: #002463;
+  border: none;
+  border-radius: 0px 5px 5px 0;
+  background-color: #002463;
 
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.searchBar:focus {
+  border: 1px solid #002463;
+}
+
+.container {
+  margin-top: 100px;
 }
