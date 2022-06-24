@@ -15,8 +15,8 @@ export default function Results() {
       <section className={classes.container}>
         {Array<any>(10)
           .fill(0)
-          .map((e) => (
-            <div className={classes.skeletonContainer}>
+          .map((e, index) => (
+            <div className={classes.skeletonContainer} key={index}>
               <div className={classes.skeletonHeader}>
                 <Skeleton
                   variant="circular"
@@ -50,8 +50,9 @@ export default function Results() {
 
               {Array<any>(8)
                 .fill(0)
-                .map((e) => (
+                .map((e, index) => (
                   <Skeleton
+                    key={index}
                     variant="text"
                     width="95%"
                     height={20}
@@ -69,8 +70,8 @@ export default function Results() {
     <section className={classes.container}>
       {Array<any>(10)
         .fill(0)
-        .map((e) => (
-          <JobPost />
+        .map((e, index) => (
+          <JobPost key={index} />
         ))}
     </section>
   );

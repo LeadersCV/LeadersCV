@@ -7,8 +7,6 @@ import classes from "../styles/search/search.module.css";
 export default function SearchPage() {
   const router = useRouter();
 
-  console.log(router.query.term);
-
   return (
     <div>
       <TopBar term={router.query.term} />
