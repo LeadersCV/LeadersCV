@@ -1,0 +1,69 @@
+.bar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #afafaf;
+  justify-content: space-between;
+  box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
+  -webkit-box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
+  -moz-box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
+}
+
+.leftSide {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.rightSide {
+  display: flex;
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.textField {
+  height: 35px;
+  width: 25%;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  margin: 0px 0px 0px 20px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffffff;
+
+  color: #002463;
+  transition: width 500ms ease-in-out;
+}
+
+.textField:focus {
+  width: 35%;
+  border: 0.5px solid #002463;
+}
+
+.searchButton {
+  color: white;
+  height: 35px;
+  width: 90px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #002463;
+
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rightButtons {
+  text-decoration: none;
+  color: #002463;
+  font-size: 18px;
+  font-weight: bolder;
+}

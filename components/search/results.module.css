@@ -1,0 +1,21 @@
+.container {
+  height: 500px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeletonContainer {
+  width: 500px;
+  border-radius: 20px;
+  background-color: rgb(172, 172, 172);
+  padding: 20px;
+}
+
+.skeletonHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,38 @@
+.container {
+  background-color: white;
+
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: -2px 1px 5px -4px rgba(18, 18, 18, 0.75);
+  -webkit-box-shadow: -2px 1px 5px -4px rgba(18, 18, 18, 0.75);
+  -moz-box-shadow: -2px 1px 5px -4px rgba(18, 18, 18, 0.75);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  font-weight: bold;
+  font-size: 10px;
+  word-wrap: break-word;
+}
