@@ -12,7 +12,7 @@ export default function SearchPage() {
       <TopBar term={router.query.term} />
       <section className={classes.contentSection}>
         <Filters />
-        <Results />
+        <Results isLoading={true} term={router.query.term} />
       </section>
     </div>
   );

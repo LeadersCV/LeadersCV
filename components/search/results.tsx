@@ -3,12 +3,17 @@ import { useEffect, useState } from "react";
 import JobPost from "./job_post";
 import classes from "./results.module.css";
 
-export default function Results() {
+export default function Results(props: any) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(true);
+    fetchingData();
+  }, [props.term]);
+
+  const fetchingData = () => {
     setTimeout(() => setIsLoading(false), 1000);
-  }, [isLoading]);
+  };
 
   if (isLoading) {
     return (
