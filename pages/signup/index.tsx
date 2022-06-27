@@ -1,12 +1,19 @@
-import GuestHeader from "../components/headers and footers/guest_header";
-import CountryCodePicker from "../components/shared/country_code_picker";
-import CountryPicker from "../components/shared/country_picker";
-import CustomButton from "../components/shared/custom_button";
-import CustomDropDown from "../components/shared/custom_drop_down";
-import CustomTextField from "../components/shared/custom_text_field";
-import classes from "../styles/signup/signup.module.css";
+import { useRouter } from "next/router";
+import GuestHeader from "../../components/headers and footers/guest_header";
+import CountryCodePicker from "../../components/shared/country_code_picker";
+import CountryPicker from "../../components/shared/country_picker";
+import CustomButton from "../../components/shared/custom_button";
+import CustomDropDown from "../../components/shared/custom_drop_down";
+import CustomTextField from "../../components/shared/custom_text_field";
+import classes from "../../styles/signup/signup.module.css";
 
 function SignupPage() {
+  const router = useRouter();
+
+  const goToVerificationPage = () => {
+    router.push("/signup/phone-verification");
+  };
+
   return (
     <div className={classes.container}>
       <GuestHeader />
@@ -59,7 +66,7 @@ function SignupPage() {
           verification code will be sent to the phone number provided for
           verification, otherwise , email verification will be sent instead.
         </p>
-        <CustomButton text="Confirm" />
+        <CustomButton onClick={() => goToVerificationPage()} text="Confirm" />
       </section>
     </div>
   );

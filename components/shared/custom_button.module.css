@@ -1,14 +1,26 @@
-.submitButton{
-    color: white;
-    height: 50px;
-    width: 300px;
+.submitButton {
+  color: white;
+  height: 50px;
+  width: 300px;
 
-    border: none;
-    border-radius: 5px;
-    background-color: #002463;
+  border: none;
+  border-radius: 5px;
+  background-color: #002463;
 
-    font-weight: bold;
-    font-size: 18px;
-   cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
 
+.disabledButton {
+  background-color: #989797;
+  color: white;
+  height: 50px;
+  width: 300px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-weight: bold;
+  font-size: 18px;
 }
