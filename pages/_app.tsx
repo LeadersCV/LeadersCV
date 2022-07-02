@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 import { useEffect } from "react";
+import { appWithTranslation } from "next-i18next";
 import Aos from "aos";
 import "../styles/globals.css";
 
@@ -17,7 +18,7 @@ interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 
-export default function MyApp(props: MyAppProps) {
+function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   useEffect(() => {
@@ -34,8 +35,12 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Component {...pageProps} />
+        <div>
+          <Component {...pageProps} />
+        </div>
       </ThemeProvider>
     </CacheProvider>
   );
 }
+
+export default appWithTranslation(MyApp);

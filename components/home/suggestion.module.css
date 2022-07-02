@@ -12,6 +12,7 @@
   cursor: pointer;
   font-weight: bolder;
   color: #002463;
+  box-shadow: 0px 0px 2.5px 1px rgb(161, 161, 161);
 }
 
 .icon {

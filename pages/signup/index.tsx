@@ -1,3 +1,6 @@
+import { GetStaticProps } from "next";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import GuestHeader from "../../components/headers and footers/guest_header";
 import CountryCodePicker from "../../components/shared/country_code_picker";
@@ -7,11 +10,18 @@ import CustomDropDown from "../../components/shared/custom_drop_down";
 import CustomTextField from "../../components/shared/custom_text_field";
 import classes from "../../styles/signup/signup.module.css";
 
+export const getStaticProps: GetStaticProps = async ({ locale }: any) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["navbar", "common"])),
+  },
+});
+
 function SignupPage() {
   const router = useRouter();
+  const { i18n } = useTranslation();
 
   const goToVerificationPage = () => {
-    router.push("/signup/phone-verification");
+    router.push("/" + i18n.language + "/signup/phone-verification");
   };
 
   return (

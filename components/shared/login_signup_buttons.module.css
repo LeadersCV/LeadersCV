@@ -8,16 +8,58 @@
 .login {
   text-decoration: none;
   color: #002463;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bolder;
 }
 
 .signup {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bolder;
   background-color: #fcb730;
   padding: 12px;
   border-radius: 15px;
+}
+
+.languageDropDown {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: calc(100% +0.25ren);
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropDown > .languageDropDown:focus + .menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.languageButtons {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0px;
 }
