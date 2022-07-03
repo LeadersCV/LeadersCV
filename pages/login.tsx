@@ -2,24 +2,14 @@ import classes from "../styles/login/login.module.css";
 import CustomTextField from "../components/shared/custom_text_field";
 import CustomButton from "../components/shared/custom_button";
 import GuestHeader from "../components/headers and footers/guest_header";
-import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
-
-export const getStaticProps: GetStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["navbar", "common"])),
-  },
-});
+import MiddleContainer from "../components/shared/middle_container";
 
 function LoginPage(props: any) {
-  const { t } = useTranslation("");
-
   return (
     <div className={classes.container}>
       <GuestHeader />
-      <section className={classes.section}>
-        <h1 className={classes.headline}>{t("common:login")}</h1>
+      <MiddleContainer padding="10vh 10vw">
+        <h1 className={classes.headline}>Log in</h1>
         <div className={classes.loginForm}>
           <CustomTextField
             type="email"
@@ -32,9 +22,9 @@ function LoginPage(props: any) {
             placeholder="Password"
           />
           <p className={classes.createAccount}>create an account?</p>
-          <CustomButton text={t("common:login")} />
+          <CustomButton text="Log in" />
         </div>
-      </section>
+      </MiddleContainer>
     </div>
   );
 }

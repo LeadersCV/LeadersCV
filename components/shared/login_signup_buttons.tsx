@@ -1,14 +1,5 @@
-import {
-  Button,
-  FormControl,
-  InputLabel,
-  Menu,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-} from "@mui/material";
+import { Button, Menu, MenuItem } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
-import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import classes from "./login_signup_buttons.module.css";
 import React from "react";
@@ -24,15 +15,11 @@ export default function LoginAndSignUpButtons() {
     onChangeLanguage(lang);
   };
 
-  const { t, i18n } = useTranslation();
-
   const onChangeLanguage = (lang: string) => {
-    var all = document.getElementsByTagName("*");
-
-    i18n.changeLanguage(lang);
-    for (var i = 0, max = all.length; i < max; i++) {
-      all[i].setAttribute("dir", i18n.dir(lang));
-    }
+    //i18n.changeLanguage(lang);
+    // for (var i = 0, max = all.length; i < max; i++) {
+    //   all[i].setAttribute("dir", i18n.dir(lang));
+    // }
   };
 
   return (
@@ -62,10 +49,10 @@ export default function LoginAndSignUpButtons() {
       </Menu>
 
       <Link href="/login">
-        <a className={classes.login}>{t("common:login")}</a>
+        <a className={classes.login}>Log in</a>
       </Link>
       <Link href="/signup">
-        <a className={classes.signup}>{t("common:sign_up")}</a>
+        <a className={classes.signup}>Sign up</a>
       </Link>
     </div>
   );

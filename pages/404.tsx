@@ -1,13 +1,5 @@
-import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import classes from "../styles/404/404.module.css";
-
-export const getStaticProps: GetStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["navbar", "common"])),
-  },
-});
 
 function NotFoundPage() {
   return (

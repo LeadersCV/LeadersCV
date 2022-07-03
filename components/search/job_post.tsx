@@ -1,8 +1,15 @@
-import { Avatar, Fab } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Avatar,
+  Fab,
+  Typography,
+} from "@mui/material";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
-import ShareIcon from "@mui/icons-material/Share";
-
+import LinkIcon from "@mui/icons-material/Link";
 import classes from "./job_post.module.css";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function JobPost(props: any) {
   return (
@@ -19,13 +26,29 @@ export default function JobPost(props: any) {
             <BookmarkBorderIcon color="primary" />
           </Fab>
           <Fab size="small" sx={{ bgcolor: "white" }} aria-label="share">
-            <ShareIcon color="primary" />
+            <LinkIcon color="primary" />
           </Fab>
         </div>
       </div>
       <p className={classes.content}>
         dsdfsdfsfsdsdsdsdsdsasdaweeqwewqewqeqwwwdsdsdssdssdsdssdsdsaddsadassdadasdasasewewqwqwewewqewqewqdcgdsfdlfksdidfjafkdjgfkdsjfkfjdk
       </p>
+      <Accordion TransitionProps={{ unmountOnExit: true }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.question}>Requirements</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className={classes.answer}>
+            dsdfsdfsfsdsdsdsdsdsasdaweeqwewqewqeqwwwdsdsdssdssdsdssdsdsaddsadassdadasdasasewewqwqwewewqewqewqdcgdsfdlfksdidfjafkdjgfkdsjfkfjdk
+            dsdfsdfsfsdsdsdsdsdsasdaweeqwewqewqeqwwwdsdsdssdssdsdssdsdsaddsadassdadasdasasewewqwqwewewqewqewqdcgdsfdlfksdidfjafkdjgfkdsjfkfjdk
+            dsdfsdfsfsdsdsdsdsdsasdaweeqwewqewqeqwwwdsdsdssdssdsdssdsdsaddsadassdadasdasasewewqwqwewewqewqewqdcgdsfdlfksdidfjafkdjgfkdsjfkfjdk
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 }

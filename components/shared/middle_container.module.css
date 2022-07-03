@@ -1,0 +1,13 @@
+.section {
+  margin-top: 10vh;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 0px 20px 0px rgba(0, 0, 0, 0.36);
+
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}

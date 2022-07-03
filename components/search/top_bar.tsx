@@ -1,4 +1,3 @@
-import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -7,7 +6,6 @@ import classes from "./top_bar.module.css";
 
 export default function TopBar(props: any) {
   const router = useRouter();
-  const { i18n } = useTranslation();
   const [searchTerm, setSearchTerm] = useState(props.term);
 
   const enterSearch = (event: KeyboardEvent) => {
@@ -26,7 +24,7 @@ export default function TopBar(props: any) {
 
   const search = () => {
     router.push({
-      pathname: "/" + i18n.language + "/search",
+      pathname: "/search",
       query: { term: searchTerm },
     });
   };

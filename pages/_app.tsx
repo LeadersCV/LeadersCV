@@ -7,7 +7,6 @@ import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 import { useEffect } from "react";
-import { appWithTranslation } from "next-i18next";
 import Aos from "aos";
 import "../styles/globals.css";
 
@@ -43,4 +42,4 @@ function MyApp(props: MyAppProps) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;

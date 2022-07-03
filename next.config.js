@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./next-i18next.config');
+// const { i18n } = require('./next-i18next.config');
 const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: "akamai",
     path: "",
   },
-  i18n,
+  // i18n,
   // basePath: "/LeadersCV",
   // assetPrefix: "/LeadersCV",
 }

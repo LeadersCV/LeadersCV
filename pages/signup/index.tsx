@@ -1,6 +1,3 @@
-import { GetStaticProps } from "next";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 import GuestHeader from "../../components/headers and footers/guest_header";
 import CountryCodePicker from "../../components/shared/country_code_picker";
@@ -8,26 +5,20 @@ import CountryPicker from "../../components/shared/country_picker";
 import CustomButton from "../../components/shared/custom_button";
 import CustomDropDown from "../../components/shared/custom_drop_down";
 import CustomTextField from "../../components/shared/custom_text_field";
+import MiddleContainer from "../../components/shared/middle_container";
 import classes from "../../styles/signup/signup.module.css";
-
-export const getStaticProps: GetStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["navbar", "common"])),
-  },
-});
 
 function SignupPage() {
   const router = useRouter();
-  const { i18n } = useTranslation();
 
   const goToVerificationPage = () => {
-    router.push("/" + i18n.language + "/signup/phone-verification");
+    router.push("/signup/phone-verification");
   };
 
   return (
     <div className={classes.container}>
       <GuestHeader />
-      <section className={classes.section}>
+      <MiddleContainer padding="5vh 4vw">
         <h1 className={classes.headline}>SIGN UP</h1>
         <div className={classes.signUpForm}>
           <div className={classes.formColumn}>
@@ -77,7 +68,7 @@ function SignupPage() {
           verification, otherwise , email verification will be sent instead.
         </p>
         <CustomButton onClick={() => goToVerificationPage()} text="Confirm" />
-      </section>
+      </MiddleContainer>
     </div>
   );
 }
