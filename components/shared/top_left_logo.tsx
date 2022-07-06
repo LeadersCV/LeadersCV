@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function TopLeftLogo() {
+export default function TopLeftLogo(props : any) {
   return (
     <Link href="/">
       <Image
         src="/assets/Leaderscv_full_logo.png"
-        width={500}
-        height={125}
+        width={props.width}
+        height={props.height}
         priority
         style={{
           cursor: "pointer",

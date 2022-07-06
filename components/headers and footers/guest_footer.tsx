@@ -1,9 +1,10 @@
 import Link from "next/link";
+import classes from "./guest_footer.module.css";
 
 export default function GuestFooter() {
   return (
-    <nav>
-      <div>
+    <nav className={classes.footer}>
+      <div className={classes.column}>
         <Link href="/">Home</Link>
         <Link href="/#About">About</Link>
 

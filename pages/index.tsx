@@ -14,7 +14,7 @@ const Home: NextPage = (props: any) => {
   return (
     <div className={classes.container}>
       <GuestHeader />
-      <TopLeftLogo />
+      <TopLeftLogo width={500} height={125}/>
       <SearchBar />
       <Suggestions />
       <Statistics />

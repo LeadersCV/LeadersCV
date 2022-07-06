@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import classes from "./statistic_element.module.css";
 
 export default function StatisticElement(props: any) {
@@ -8,7 +9,7 @@ export default function StatisticElement(props: any) {
       data-aos-duration="1250"
       data-aos-offset="150"
     >
-      <p className={classes.number}>{props.number}</p>
+      <CountUp end={props.number} duration={1.5} className={classes.number} enableScrollSpy />
       <p className={classes.name}>{props.name} </p>
     </div>
   );
