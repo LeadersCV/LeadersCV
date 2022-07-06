@@ -3,12 +3,18 @@ import Link from "next/link";
 export default function GuestFooter() {
   return (
     <nav>
-      <Link href="/">Home</Link>
-      <Link href="/#about">About</Link>
+      <div>
+        <Link href="/">Home</Link>
+        <Link href="/#About">About</Link>
 
-      <Link href="/home">Home</Link>
+        <Link href="/#Pricing">Pricing</Link>
 
-      <Link href="/home">Home</Link>
+        <Link href="/#FAQ">FAQ</Link>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+
       <Link href="/home">Home</Link>
       <Link href="/home">Home</Link>
     </nav>

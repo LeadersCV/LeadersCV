@@ -6,8 +6,8 @@ export default function TopLeftLogo() {
     <Link href="/">
       <Image
         src="/assets/Leaderscv_full_logo.png"
-        width={150}
-        height={37.5}
+        width={500}
+        height={125}
         priority
         style={{
           cursor: "pointer",
