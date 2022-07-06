@@ -1,4 +1,4 @@
-import { Avatar, Skeleton } from "@mui/material";
+import { Avatar, Pagination, Skeleton } from "@mui/material";
 import { useEffect, useState } from "react";
 import JobPost from "./job_post";
 import classes from "./results.module.css";
@@ -73,11 +73,18 @@ export default function Results(props: any) {
 
   return (
     <section className={classes.container}>
-      {Array<any>(10)
+      {Array<any>(5)
         .fill(0)
         .map((e, index) => (
           <JobPost key={index} />
         ))}
+      <Pagination
+        count={10}
+        color="primary"
+        sx={{
+          margin: "20px auto",
+        }}
+      />
     </section>
   );
 }

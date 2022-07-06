@@ -3,6 +3,7 @@ import CustomTextField from "../components/shared/custom_text_field";
 import CustomButton from "../components/shared/custom_button";
 import GuestHeader from "../components/headers and footers/guest_header";
 import MiddleContainer from "../components/shared/middle_container";
+import Link from "next/link";
 
 function LoginPage(props: any) {
   return (
@@ -21,7 +22,9 @@ function LoginPage(props: any) {
             fieldName="Password"
             placeholder="Password"
           />
-          <p className={classes.createAccount}>create an account?</p>
+          <Link href={"/signup"}>
+            <p className={classes.createAccount}>create an account?</p>
+          </Link>
           <CustomButton text="Log in" />
         </div>
       </MiddleContainer>

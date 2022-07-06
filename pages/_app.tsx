@@ -9,6 +9,7 @@ import createEmotionCache from "../src/createEmotionCache";
 import { useEffect } from "react";
 import Aos from "aos";
 import "../styles/globals.css";
+import GuestFooter from "../components/headers and footers/guest_footer";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -34,9 +35,8 @@ function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <div>
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
+        <GuestFooter />
       </ThemeProvider>
     </CacheProvider>
   );

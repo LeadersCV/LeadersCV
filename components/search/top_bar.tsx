@@ -33,7 +33,7 @@ export default function TopBar(props: any) {
     <nav className={classes.bar}>
       <section className={classes.leftSide}>
         <div style={{ paddingLeft: "10px" }}>
-          <TopLeftLogo />
+          <TopLeftLogo width="175px" height="45px" />
         </div>
 
         <input

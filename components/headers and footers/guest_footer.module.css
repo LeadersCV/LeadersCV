@@ -1,14 +1,33 @@
-.footer{
-    display:  flex;
-    flex-direction: row;
-    margin: 0 20vw;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  border-top: 1px solid rgb(187, 187, 187);
+  background-color: rgb(238, 238, 238);
 }
-.column{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-font-size: 12px;
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.linkStyle {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #002463;
+  cursor: pointer;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
 }
