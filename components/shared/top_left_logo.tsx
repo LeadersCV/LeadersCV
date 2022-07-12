@@ -8,6 +8,7 @@ export default function TopLeftLogo(props : any) {
         src="/assets/Leaderscv_full_logo.png"
         width={props.width}
         height={props.height}
+        alt="logo"
         priority
         style={{
           cursor: "pointer",
