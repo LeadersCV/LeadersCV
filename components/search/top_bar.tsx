@@ -20,7 +20,7 @@ export default function TopBar(props: any) {
     return () => {
       document.removeEventListener("keydown", enterSearch);
     };
-  }, [enterSearch]);
+  }, []);
 
   const search = () => {
     router.push({

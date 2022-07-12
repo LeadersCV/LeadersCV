@@ -27,7 +27,7 @@ export default function CountryPicker(props: any) {
               width="20"
               src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
               srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
-              alt=""
+              alt="flag"
             />
             {option.label}
           </Box>
