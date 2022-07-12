@@ -47,31 +47,41 @@ export default function Filters() {
           name="radio-buttons-group"
         >
           <FormControlLabel
-            sx={{ color: "white" }}
+             sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+              fontSize: "13px"
+             }, }}
             value="1"
             control={<Radio {...controlProps("1")} />}
             label="Last 24 hours"
           />
           <FormControlLabel
-            sx={{ color: "white" }}
+              sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+                fontSize: "13px"
+               }, }}
             value="7"
             control={<Radio {...controlProps("7")} />}
             label="Last 7 days"
           />
           <FormControlLabel
-            sx={{ color: "white" }}
+             sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+              fontSize: "13px"
+             }, }}
             value="14"
             control={<Radio {...controlProps("14")} />}
             label="Last 14 days"
           />
           <FormControlLabel
-            sx={{ color: "white" }}
+              sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+                fontSize: "13px"
+               }, }}
             value="30"
             control={<Radio {...controlProps("30")} />}
             label="Last month"
           />
           <FormControlLabel
-            sx={{ color: "white", fontWeight: "bolder" }}
+                sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+                  fontSize: "13px"
+                 }, }}
             value="180"
             control={<Radio {...controlProps("180")} />}
             label="Last 6 months"
@@ -117,7 +127,9 @@ export default function Filters() {
               defaultChecked
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+           fontSize: "13px"
+          }, }}
           label="Full Time"
         />
         <FormControlLabel
@@ -131,7 +143,9 @@ export default function Filters() {
               }}
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+            fontSize: "13px"
+           }, }}
           label="Part Time"
         />
         <FormControlLabel
@@ -145,7 +159,9 @@ export default function Filters() {
               }}
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+            fontSize: "13px"
+           }, }}
           label="Contract"
         />
       </FormGroup>
@@ -168,7 +184,9 @@ export default function Filters() {
               defaultChecked
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+            fontSize: "13px"
+           }, }}
           label="On Site"
         />
         <FormControlLabel
@@ -182,7 +200,9 @@ export default function Filters() {
               }}
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+            fontSize: "13px"
+           }, }}
           label="Remote"
         />
         <FormControlLabel
@@ -196,7 +216,9 @@ export default function Filters() {
               }}
             />
           }
-          sx={{ color: "white" }}
+          sx={{ color: "white" , '& .MuiFormControlLabel-label': {
+            fontSize: "13px"
+           }, }}
           label="Hybrid"
         />
       </FormGroup>

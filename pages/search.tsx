@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Filters from "../components/search/filters";
 import Results from "../components/search/results";
+import SelectedJobPost from "../components/search/selected_job_post";
 import TopBar from "../components/search/top_bar";
 import classes from "../styles/search/search.module.css";
 
@@ -13,6 +14,7 @@ export default function SearchPage() {
       <section className={classes.contentSection}>
         <Filters />
         <Results isLoading={true} term={router.query.term} />
+        <SelectedJobPost/>
       </section>
     </div>
   );
