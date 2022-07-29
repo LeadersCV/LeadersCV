@@ -6,7 +6,7 @@ import classes from "./top_bar.module.css";
 
 export default function TopBar(props: any) {
   const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState(props.term);
+  const [searchTerm, setSearchTerm] = useState(router.query.term);
 
   const enterSearch = (event: KeyboardEvent) => {
     if (event.key === "Enter") {

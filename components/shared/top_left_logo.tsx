@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import websiteLogo from "../../public/assets/Leaderscv_full_logo.png";
 
-export default function TopLeftLogo(props : any) {
+export default function TopLeftLogo(props: any) {
   return (
     <Link href="/">
       <Image
-        src="/assets/Leaderscv_full_logo.png"
+        src={"/" + websiteLogo.src}
         width={props.width}
         height={props.height}
         alt="logo"

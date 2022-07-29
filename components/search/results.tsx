@@ -1,15 +1,17 @@
 import { Avatar, Pagination, Skeleton } from "@mui/material";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import JobPost from "./job_post";
 import classes from "./results.module.css";
 
 export default function Results(props: any) {
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     setIsLoading(true);
     fetchingData();
-  }, [props.term]);
+  }, [router.query.term]);
 
   const fetchingData = () => {
     setTimeout(() => setIsLoading(false), 1000);
@@ -76,7 +78,7 @@ export default function Results(props: any) {
       {Array<any>(5)
         .fill(0)
         .map((e, index) => (
-          <JobPost key={index} />
+          <JobPost key={index} selected={index === 0} />
         ))}
       <Pagination
         count={10}

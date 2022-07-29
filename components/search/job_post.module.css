@@ -6,6 +6,7 @@
   box-shadow: 0px 0px 15px -4px rgba(145, 145, 145, 0.75);
   -webkit-box-shadow: 0px 0px 15px -4px rgba(145, 145, 145, 0.75);
   -moz-box-shadow: 0px 0px 15px -4px rgba(145, 145, 145, 0.75);
+  cursor: pointer;
 }
 
 .header {
@@ -35,4 +36,40 @@
   font-weight: bold;
   font-size: 10px;
   word-wrap: break-word;
+}
+
+.selectedJobPost {
+  border: 1px solid rgb(48, 31, 203);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.date {
+  font-size: 12px;
+  color: rgb(96, 95, 95);
+  font-weight: bold;
+}
+
+.title {
+  font-size: 15px;
+  color: #002463;
+  font-weight: bold;
+}
+
+.separator {
+  font-size: 12px;
+  color: rgb(96, 95, 95);
+
+  font-weight: bold;
+}
+
+.applied {
+  font-size: 12px;
+  color: rgb(96, 95, 95);
+  font-weight: bold;
 }

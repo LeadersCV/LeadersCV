@@ -4,16 +4,13 @@
   width: 40vw;
   outline: none;
   border: none;
-  margin-top: 5vh;
-
-  margin-bottom: 3vh;
+ 
   padding-left: 1em;
   border-radius: 5px 0px 0px 5px;
 
   font-weight: bolder;
   font-size: 20;
   color: #002463;
-  transition: border-width 1s ease-in-out;
 }
 
 .searchBar::placeholder {
@@ -39,7 +36,11 @@
 }
 
 .container {
-  margin-top: 100px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 5vh;
 }
