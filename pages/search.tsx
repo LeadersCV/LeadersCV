@@ -13,8 +13,8 @@ export default function SearchPage() {
       <TopBar term={router.query.term} />
       <section className={classes.contentSection}>
         <Filters />
-        <Results isLoading={true} term={router.query.term} />
-        <SelectedJobPost/>
+        <Results isLoading={true} />
+        <SelectedJobPost hasApplied />
       </section>
     </div>
   );

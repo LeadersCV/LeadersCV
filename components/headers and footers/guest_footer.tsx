@@ -10,9 +10,7 @@ export default function GuestFooter() {
   return (
     <nav className={classes.footer}>
       <div className={classes.column}>
-        <Link href="/">
-          <TopLeftLogo width={150} height={45} />
-        </Link>
+        <TopLeftLogo width={150} height={45} />
         <div className={classes.socialMedia}>
           <FacebookIcon fontSize="large" color="primary" />
           <TwitterIcon fontSize="large" color="primary" />

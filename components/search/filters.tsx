@@ -25,12 +25,31 @@ export default function Filters() {
     name: "color-radio-button-demo",
     inputProps: { "aria-label": item },
     sx: {
-      color: "white",
+      color: "#2264",
+      bgcolor: "#2264",
+      border: "none",
+      outline: "none",
+      width : "20px",
+      margin: "7px 10px",
+      height: "20px",
       "&.Mui-checked": {
         color: "#FCB730",
+    
       },
     },
   });
+
+  const marks = [
+    {
+      value: 2000,
+      label: '2000 $',
+    },
+    {
+      value: 15000,
+      label: '15000 $',
+    },
+
+  ];
 
   return (
     <section className={classes.container}>
@@ -104,8 +123,17 @@ export default function Filters() {
             width: "80%",
             margin: "15px auto",
           }}
+          sx={
+            {
+              '& .MuiSlider-markLabel': {
+                fontSize: "12px",
+                color: "white"
+               },
+            }
+          }
           color="secondary"
           step={500}
+          marks={marks}
         />
       </FormControl>
       <FormGroup>
@@ -118,8 +146,12 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+            size="small"
               sx={{
                 color: "white",
+                width: "10px",
+                height:"10px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
@@ -135,8 +167,12 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+            size="small"
               sx={{
                 color: "white",
+                width: "20px",
+                height:"20px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
@@ -151,8 +187,12 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+            size="small"
               sx={{
                 color: "white",
+                width: "20px",
+                height:"20px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
@@ -175,8 +215,12 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+            size="small"
               sx={{
                 color: "white",
+                width: "20px",
+                height:"20px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
@@ -192,8 +236,13 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+
+            size="small"
               sx={{
                 color: "white",
+                width: "20px",
+                height:"20px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
@@ -208,8 +257,12 @@ export default function Filters() {
         <FormControlLabel
           control={
             <Checkbox
+            size="small"
               sx={{
                 color: "white",
+                width: "20px",
+                height:"20px",
+                margin: "5px 10px",
                 "&.Mui-checked": {
                   color: "#FCB730",
                 },
