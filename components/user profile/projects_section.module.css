@@ -1,0 +1,12 @@
+.projectsContainer {
+  border-radius: 25px;
+  padding: 16px 24px;
+  box-shadow: 0px 0px 5px 2px lightgrey;
+  margin: 16px 0px;
+}
+
+.title {
+  font-size: 27.5px;
+  color: #002463;
+  font-weight: bold;
+}

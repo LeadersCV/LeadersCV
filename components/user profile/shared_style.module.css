@@ -1,0 +1,37 @@
+.titleAndActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  border-radius: 25px;
+  padding: 16px 24px;
+  box-shadow: 0px 0px 5px 2px lightgrey;
+  margin: 16px 0px;
+  width: 100%;
+}
+
+.title {
+  font-size: 25px;
+  color: #002463;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.wrapContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
+  margin: 16px 0px;
+}
+
+.interestAndSkillChips {
+  font-weight: bold;
+}
