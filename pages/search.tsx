@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Filters from "../components/search/filters";
 import Results from "../components/search/results";
@@ -10,6 +11,9 @@ export default function SearchPage() {
 
   return (
     <div>
+      <Head>
+        <title>Search</title>
+      </Head>
       <TopBar term={router.query.term} />
       <section className={classes.contentSection}>
         <Filters />

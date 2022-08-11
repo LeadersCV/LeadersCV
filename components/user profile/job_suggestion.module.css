@@ -1,0 +1,22 @@
+.jobSuggestion {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin: 8px;
+}
+
+.jobDetails {
+  width: 100%;
+  margin: 0px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.company {
+  font-size: 14px;
+}

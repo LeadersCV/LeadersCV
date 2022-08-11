@@ -1,0 +1,35 @@
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0px;
+  border-radius: 5px;
+  width: 60%;
+  padding: 8px;
+  background-color: #002463;
+  box-shadow: 0px 0px 20px 3px gray;
+}
+
+.specialty {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.university {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.date {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 2px 0px;
+}
+
+.gpa {
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}

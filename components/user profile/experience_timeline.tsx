@@ -1,15 +1,11 @@
-import classes from "./experience_timeline.module.css";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
 import { Fab } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import EditIcon from "@mui/icons-material/Edit";
 import sharedStyles from "./shared_style.module.css";
-import TimelineElement from "./timeline_item";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
+import ExperienceTimelineElement from "./experience_timeline_element";
 
 export default function ExperienceTimeline(props: any) {
   return (
@@ -27,57 +23,44 @@ export default function ExperienceTimeline(props: any) {
           </span>
         )}
       </div>
-
-      <Timeline position="alternate" sx={{ float: "left" }}>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <TimelineElement
-              job="2016 / 2018"
-              description="asasaassaewewwsdsdsdsdsdsdsdsdssddssdssdsdsdsdssd"
-            />
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" />
-            <TimelineConnector color="primary" />
-          </TimelineSeparator>
-          <TimelineContent>
-            <div>Code</div>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" />
-            <TimelineConnector color="primary" />
-          </TimelineSeparator>
-          <TimelineContent>
-            <div>Code</div>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <div>Code</div>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineDot color="primary" />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <div>Code</div>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+      <VerticalTimeline lineColor="#002463" animate={true}>
+        <ExperienceTimelineElement
+          jobTitle="Flutter Developer"
+          company="Mham International IT"
+          date="07/3/2021 - Current"
+          description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          atque eius pariatur aut soluta nemo ratione expedita? Explicabo harum
+          temporibus, quia, unde ut ex mollitia libero voluptates, recusandae
+          nihil similique?"
+        />
+        <ExperienceTimelineElement
+          jobTitle="Software Engineer"
+          company="Mham International IT"
+          date="10/04/2021 - 07/08/2021"
+          description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          atque eius pariatur aut soluta nemo ratione expedita? Explicabo harum
+          temporibus, quia, unde ut ex mollitia libero voluptates, recusandae
+          nihil similique?"
+        />
+        <ExperienceTimelineElement
+          jobTitle="Front End Developer"
+          company="Mham International IT"
+          date="07/3/2021 - Current"
+          description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          atque eius pariatur aut soluta nemo ratione expedita? Explicabo harum
+          temporibus, quia, unde ut ex mollitia libero voluptates, recusandae
+          nihil similique?"
+        />
+        <ExperienceTimelineElement
+          jobTitle="BackEnd Developer"
+          company="Mham International IT"
+          date="07/3/2021 - Current"
+          description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          atque eius pariatur aut soluta nemo ratione expedita? Explicabo harum
+          temporibus, quia, unde ut ex mollitia libero voluptates, recusandae
+          nihil similique?"
+        />
+      </VerticalTimeline>
     </section>
   );
 }
