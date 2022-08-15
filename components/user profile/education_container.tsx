@@ -1,6 +1,6 @@
 import classes from "./education_container.module.css";
 
-export default function ExperienceContainer(props: any) {
+export default function EducationContainer(props: any) {
   return (
     <div className={classes.educationContainer}>
       <span className={classes.specialty}>{props.specialty}</span>

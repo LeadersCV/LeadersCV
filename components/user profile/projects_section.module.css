@@ -10,3 +10,12 @@
   color: #002463;
   font-weight: bold;
 }
+
+.projectsList {
+  margin: 12px auto;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

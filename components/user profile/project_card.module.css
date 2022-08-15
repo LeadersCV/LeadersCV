@@ -1,0 +1,31 @@
+.card {
+  border-radius: 10px;
+  width: 60%;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #002463;
+}
+
+.description {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.date {
+  font-size: 14px;
+  color: gray;
+}
+
+.titleAndDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}

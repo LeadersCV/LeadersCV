@@ -2,7 +2,7 @@ import sharedStyles from "./shared_style.module.css";
 import AddIcon from "@mui/icons-material/Add";
 import EditIcon from "@mui/icons-material/Edit";
 import { Fab } from "@mui/material";
-import ExperienceContainer from "./education_container";
+import EducationContainer from "./education_container";
 
 export default function EducationSection(props: any) {
   return (
@@ -20,30 +20,34 @@ export default function EducationSection(props: any) {
           </span>
         )}
       </div>
-      <ExperienceContainer
+      <EducationContainer
         specialty="Software Engineering"
         university="King Fahad University Of Petroleum And Minerals"
         date="2016 - 2020"
         gpa="3.79"
       />
-      <ExperienceContainer
+      <hr style={{ width: "50%", margin: "0px" }} />
+      <EducationContainer
         specialty="Software Engineering"
         university="King Fahad University Of Petroleum And Minerals"
         date="2016 - 2020"
         gpa="3.79"
       />
-      <ExperienceContainer
+      <hr style={{ width: "50%", margin: "0px" }} />
+      <EducationContainer
         specialty="Software Engineering"
         university="King Fahad University Of Petroleum And Minerals"
         date="2016 - 2020"
         gpa="3.79"
       />
-      <ExperienceContainer
+      <hr style={{ width: "50%", margin: "0px" }} />
+      <EducationContainer
         specialty="Software Engineering"
         university="King Fahad University Of Petroleum And Minerals"
         date="2016 - 2020"
         gpa="3.79"
-      />
+      />{" "}
+      <hr style={{ width: "50%", margin: "0px" }} />
     </section>
   );
 }

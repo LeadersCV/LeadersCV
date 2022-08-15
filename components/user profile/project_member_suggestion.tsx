@@ -1,7 +1,7 @@
 import classes from "./project_member_suggestion.module.css";
 
-import Avatar from "@mui/material/Avatar/Avatar";
-import Button from "@mui/material/Button/Button";
+import { Avatar } from "@mui/material";
+import { Button } from "@mui/material";
 
 export default function ProjectMemberSuggestion(props: any) {
   return (
