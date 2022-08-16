@@ -1,17 +1,17 @@
-import { Avatar, Badge, Fab } from "@mui/material";
+import { Avatar, Fab } from "@mui/material";
 import Image from "next/image";
-import GuestHeader from "../../components/headers and footers/guest_header";
-import classes from "../../styles/user profile/user_profile.module.css";
-import userCover from "../../public/assets/user_cover.png";
+import classes from "../../../styles/user profile/user_profile.module.css";
+import userCover from "../../../public/assets/user_cover.png";
 import EditIcon from "@mui/icons-material/Edit";
-import ExperienceTimeline from "../../components/user profile/experience_timeline";
-import AboutSection from "../../components/user profile/about_section";
-import EducationSection from "../../components/user profile/education_section";
-import ProjectsSection from "../../components/user profile/projects_section";
-import InterestsSection from "../../components/user profile/interests_section";
-import SkillsSection from "../../components/user profile/skills_section";
-import UserHeader from "../../components/headers and footers/user_header";
-import SuggestionsSection from "../../components/user profile/suggestions_section";
+import GuestHeader from "../../../components/headers and footers/guest_header";
+import UserHeader from "../../../components/headers and footers/user_header";
+import AboutSection from "../../../components/user profile/about_section";
+import ExperienceTimeline from "../../../components/user profile/experience_timeline";
+import EducationSection from "../../../components/user profile/education_section";
+import SuggestionsSection from "../../../components/user profile/suggestions_section";
+import SkillsSection from "../../../components/user profile/skills_section";
+import InterestsSection from "../../../components/user profile/interests_section";
+import ProjectsSection from "../../../components/user profile/projects_section";
 
 export default function UserProfile() {
   return (
