@@ -71,12 +71,20 @@ export default function UserHeader(props: any) {
             <span>Projects</span>
           </Button>
           <Button variant="text" className={classes.rightButton}>
-            <SettingsIcon className={classes.buttonIcons} />
-            <span>Settings</span>
-          </Button>
-          <Button variant="text" className={classes.rightButton}>
             <PersonIcon className={classes.buttonIcons} />
             <span>Profile</span>
+          </Button>
+          <Button
+            variant="text"
+            className={classes.rightButton}
+            onClick={() => {
+              router.push({
+                pathname: router.asPath + "/settings",
+              });
+            }}
+          >
+            <SettingsIcon className={classes.buttonIcons} />
+            <span>Settings</span>
           </Button>
 
           <IconButton color="primary" aria-label="add to shopping cart">

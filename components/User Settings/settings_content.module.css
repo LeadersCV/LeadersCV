@@ -1,0 +1,13 @@
+.mainContainer {
+  width: 40%;
+
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 2px rgb(212, 212, 212);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header {
+  font-size: 22px;
+}
