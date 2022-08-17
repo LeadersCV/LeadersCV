@@ -4,7 +4,7 @@ export default function TableOfContents(props: any) {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.tocContainer}>
-        <h1>Settings</h1>
+        <p className={styles.title}>Settings</p>
         <span
           className={`${styles.settingsSections} ${
             props.selectedSection === "Job Alerts" && styles.selected
