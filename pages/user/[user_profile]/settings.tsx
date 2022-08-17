@@ -1,11 +1,12 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import UserHeader from "../../../components/headers and footers/user_header";
-import SettingsContent from "../../../components/User Settings/settings_content";
-import TableOfContents from "../../../components/User Settings/table_of_contents";
+import SettingsContent from "../../../components/user settings/settings_content";
+import TableOfContents from "../../../components/user settings/table_of_contents";
 import styles from "../../../styles/user profile/settings.module.css";
 
 export default function UserSettings() {
-  const [selectedSection, setSelectedSection] = useState("JobAlerts");
+  const [selectedSection, setSelectedSection] = useState("Job Alerts");
 
   function isInViewport(el: HTMLElement | null): Boolean {
     if (el !== null) {
@@ -76,6 +77,9 @@ export default function UserSettings() {
 
   return (
     <div>
+      <Head>
+        <title>User Settings</title>
+      </Head>
       <UserHeader />
       <section className={styles.mainPage}>
         <TableOfContents selectedSection={selectedSection} />

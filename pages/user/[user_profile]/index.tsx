@@ -12,10 +12,14 @@ import SuggestionsSection from "../../../components/user profile/suggestions_sec
 import SkillsSection from "../../../components/user profile/skills_section";
 import InterestsSection from "../../../components/user profile/interests_section";
 import ProjectsSection from "../../../components/user profile/projects_section";
+import Head from "next/head";
 
 export default function UserProfile() {
   return (
     <section className={classes.mainPage}>
+      <Head>
+        <title>Mohammed's Profile</title>
+      </Head>
       {false ? <GuestHeader /> : <UserHeader />}
       <div className={classes.mainContainer}>
         <main className={classes.profileContainer}>
