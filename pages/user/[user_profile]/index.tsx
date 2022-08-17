@@ -18,7 +18,7 @@ export default function UserProfile() {
   return (
     <section className={classes.mainPage}>
       <Head>
-        <title>Mohammed's Profile</title>
+        <title>Mohammeds Profile</title>
       </Head>
       {false ? <GuestHeader /> : <UserHeader />}
       <div className={classes.mainContainer}>

@@ -4,7 +4,7 @@ export default function CompanyProfile() {
   return (
     <div>
       <Head>
-        <title>Mham's Profile</title>
+        <title>Mhams Profile</title>
       </Head>
     </div>
   );
