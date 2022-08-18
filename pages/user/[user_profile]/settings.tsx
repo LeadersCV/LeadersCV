@@ -25,8 +25,10 @@ export default function UserSettings() {
 
   useEffect(() => {
     const onScroll = () => {
-      let jobAlert: HTMLElement | null = document.getElementById("JobAlert");
+      const jobAlert: HTMLElement | null = document.getElementById("JobAlert");
       const security: HTMLElement | null = document.getElementById("Security");
+      const visibility: HTMLElement | null =
+        document.getElementById("Visibility");
       const socialMedia: HTMLElement | null =
         document.getElementById("SocialMedia");
       const appearance: HTMLElement | null =
@@ -35,12 +37,17 @@ export default function UserSettings() {
         document.getElementById("Notifications");
       const resumes: HTMLElement | null = document.getElementById("Resume");
 
+      const emailSettings: HTMLElement | null =
+        document.getElementById("EmailSettings");
+
       const isJobAlertInViewport = isInViewport(jobAlert);
       const isSecurityInViewport = isInViewport(security);
+      const isVisibilityInViewport = isInViewport(visibility);
       const isSocialMediaInViewport = isInViewport(socialMedia);
       const isAppearanceInViewport = isInViewport(appearance);
       const isNotificationsInViewport = isInViewport(notifications);
       const isResumesInViewport = isInViewport(resumes);
+      const isEmailSettingsInViewport = isInViewport(emailSettings);
 
       if (isJobAlertInViewport) {
         setSelectedSection("Job Alerts");
@@ -48,6 +55,10 @@ export default function UserSettings() {
       }
       if (isSecurityInViewport) {
         setSelectedSection("Security");
+        return;
+      }
+      if (isVisibilityInViewport) {
+        setSelectedSection("Visibility");
         return;
       }
       if (isSocialMediaInViewport) {
@@ -59,12 +70,14 @@ export default function UserSettings() {
         return;
       }
       if (isNotificationsInViewport) {
-        console.log(isNotificationsInViewport);
         setSelectedSection("Notifications");
         return;
       }
+      if (isEmailSettingsInViewport) {
+        setSelectedSection("EmailSettings");
+        return;
+      }
       if (isResumesInViewport) {
-        console.log(isResumesInViewport);
         setSelectedSection("Resumes");
         return;
       }

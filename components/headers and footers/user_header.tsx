@@ -4,13 +4,15 @@ import TopLeftLogo from "../shared/top_left_logo";
 import classes from "./user_header.module.css";
 import SettingsIcon from "@mui/icons-material/Settings";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import BedtimeIcon from "@mui/icons-material/Bedtime";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import GroupIcon from "@mui/icons-material/Group";
 import PersonIcon from "@mui/icons-material/Person";
 import HomeIcon from "@mui/icons-material/Home";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import ShowChartIcon from "@mui/icons-material/ShowChart";
 import styles from "./shared_styles.module.css";
 import { Badge, Button, IconButton } from "@mui/material";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function UserHeader(props: any) {
   const router = useRouter();
@@ -74,6 +76,10 @@ export default function UserHeader(props: any) {
             <PersonIcon className={classes.buttonIcons} />
             <span>Profile</span>
           </Button>
+          <Button variant="text" className={classes.rightButton}>
+            <ShowChartIcon className={classes.buttonIcons} />
+            <span>Statistics</span>
+          </Button>
           <Button
             variant="text"
             className={classes.rightButton}
@@ -86,14 +92,19 @@ export default function UserHeader(props: any) {
             <SettingsIcon className={classes.buttonIcons} />
             <span>Settings</span>
           </Button>
-
           <IconButton color="primary" aria-label="add to shopping cart">
-            <Badge badgeContent={4} color="primary">
-              <NotificationsIcon style={{ fontSize: "30px" }} />
+            <Badge badgeContent={2} color="primary">
+              <ChatBubbleIcon style={{ fontSize: "25px" }} />
             </Badge>
           </IconButton>
           <IconButton color="primary" aria-label="add to shopping cart">
-            <BedtimeIcon style={{ fontSize: "30px" }} />
+            <Badge badgeContent={4} color="primary">
+              <NotificationsIcon style={{ fontSize: "25px" }} />
+            </Badge>
+          </IconButton>
+
+          <IconButton color="primary" aria-label="add to shopping cart">
+            <LogoutIcon style={{ fontSize: "25px" }} />
           </IconButton>
         </div>
       </section>

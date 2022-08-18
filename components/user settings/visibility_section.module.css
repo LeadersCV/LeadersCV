@@ -1,0 +1,19 @@
+.visibilityContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 0px;
+}
+
+.visibilityTile {
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.visibilityTile span {
+  font-size: 16px;
+  font-weight: bold;
+}

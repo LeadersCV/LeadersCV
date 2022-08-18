@@ -21,6 +21,13 @@ export default function TableOfContents(props: any) {
         </span>
         <span
           className={`${styles.settingsSections} ${
+            props.selectedSection === "Visibility" && styles.selected
+          }`}
+        >
+          Visibility
+        </span>
+        <span
+          className={`${styles.settingsSections} ${
             props.selectedSection === "Social Media" && styles.selected
           }`}
         >
@@ -39,6 +46,13 @@ export default function TableOfContents(props: any) {
           }`}
         >
           Notifications
+        </span>
+        <span
+          className={`${styles.settingsSections} ${
+            props.selectedSection === "EmailSettings" && styles.selected
+          }`}
+        >
+          Email Settings
         </span>
         <span
           className={`${styles.settingsSections} ${
