@@ -72,11 +72,30 @@ export default function UserHeader(props: any) {
             <GroupIcon className={classes.buttonIcons} />
             <span>Projects</span>
           </Button>
-          <Button variant="text" className={classes.rightButton}>
+          <Button
+            variant="text"
+            className={classes.rightButton}
+            onClick={() => {
+              const path: string[] = router.asPath.split("/");
+              router.push({
+                pathname: "/user/" + path[2],
+              });
+            }}
+          >
             <PersonIcon className={classes.buttonIcons} />
             <span>Profile</span>
           </Button>
-          <Button variant="text" className={classes.rightButton}>
+          <Button
+            variant="text"
+            className={classes.rightButton}
+            onClick={() => {
+              const path: string[] = router.asPath.split("/");
+
+              router.push({
+                pathname: "/user/" + path[2] + "/statistics",
+              });
+            }}
+          >
             <ShowChartIcon className={classes.buttonIcons} />
             <span>Statistics</span>
           </Button>
@@ -84,8 +103,9 @@ export default function UserHeader(props: any) {
             variant="text"
             className={classes.rightButton}
             onClick={() => {
+              const path: string[] = router.asPath.split("/");
               router.push({
-                pathname: router.asPath + "/settings",
+                pathname: "/user/" + path[2] + "/settings",
               });
             }}
           >
