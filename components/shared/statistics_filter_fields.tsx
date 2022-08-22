@@ -1,10 +1,10 @@
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import styles from "./filter_fields.module.css";
+import styles from "./statistics_filter_fields.module.css";
 import { DateRangePicker } from "react-date-range";
 import { useState } from "react";
 
-export default function FilterFields() {
+export default function StatisticsFilterFields() {
   const [currentRange, setCurrentRange] = useState([
     {
       startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
@@ -21,7 +21,11 @@ export default function FilterFields() {
 
   return (
     <section className={styles.filterSection}>
-      <DateRangePicker ranges={currentRange} onChange={handleSelect} />
+      <DateRangePicker
+        ranges={currentRange}
+        onChange={handleSelect}
+        color="#002463"
+      />
     </section>
   );
 }

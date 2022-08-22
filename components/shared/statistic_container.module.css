@@ -1,0 +1,31 @@
+.statisticContainer {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  margin: 0px 12px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px lightgrey;
+}
+
+.title {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #002463;
+}
+
+.statistic {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 70px;
+  font-weight: bold;
+}
