@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
-import UserHeader from "../../../components/headers and footers/user_header";
+import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
 import SettingsContent from "../../../components/user settings/settings_content";
 import TableOfContents from "../../../components/user settings/table_of_contents";
 import styles from "../../../styles/user profile/settings.module.css";
@@ -93,7 +93,7 @@ export default function UserSettings() {
       <Head>
         <title>User Settings</title>
       </Head>
-      <UserHeader />
+      <UserOrCompanyHeader />
       <section className={styles.mainPage}>
         <TableOfContents selectedSection={selectedSection} />
         <SettingsContent />

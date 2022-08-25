@@ -4,7 +4,7 @@ import classes from "../../../styles/user profile/user_profile.module.css";
 import userCover from "../../../public/assets/user_cover.png";
 import EditIcon from "@mui/icons-material/Edit";
 import GuestHeader from "../../../components/headers and footers/guest_header";
-import UserHeader from "../../../components/headers and footers/user_header";
+import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
 import AboutSection from "../../../components/user profile/about_section";
 import ExperienceTimeline from "../../../components/user profile/experience_timeline";
 import EducationSection from "../../../components/user profile/education_section";
@@ -20,7 +20,7 @@ export default function UserProfile() {
       <Head>
         <title>Mohammeds Profile</title>
       </Head>
-      {false ? <GuestHeader /> : <UserHeader />}
+      {false ? <GuestHeader /> : <UserOrCompanyHeader />}
       <div className={classes.mainContainer}>
         <main className={classes.profileContainer}>
           <section className={classes.coverAndProfileSection}>

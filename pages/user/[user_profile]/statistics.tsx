@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import UserHeader from "../../../components/headers and footers/user_header";
+import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
 import StatisticContainer from "../../../components/shared/statistic_container";
 import CompanyTypesApplied from "../../../components/user statistics/company_types_applied";
 import StatisticsFilterFields from "../../../components/shared/statistics_filter_fields";
@@ -14,7 +14,7 @@ export default function UserStatistics() {
       <Head>
         <title>User Statistics</title>
       </Head>
-      <UserHeader />
+      <UserOrCompanyHeader />
       <section className={styles.mainContainer}>
         <StatisticsFilterFields />
         <ProfileViews header="User Profile Visits" />

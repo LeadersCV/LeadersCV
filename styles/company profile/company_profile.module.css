@@ -1,0 +1,43 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.suggestionsAndActions {
+  display: flex;
+  flex-direction: column;
+}
+
+.editCoverButton {
+  position: absolute;
+  background-color: white;
+  bottom: 15px;
+  right: 15px;
+}
+
+.coverAndProfileSection {
+  position: relative;
+  height: 250px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 25px 25px 0px 0px;
+  margin-top: 90px;
+}
+
+.profilePicture {
+  position: absolute;
+  bottom: -75px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+}

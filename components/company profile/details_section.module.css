@@ -1,0 +1,43 @@
+.detailsSection {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(239, 239, 239);
+}
+
+.company {
+  font-size: large;
+  color: #002463;
+  font-weight: bold;
+}
+
+.industry {
+  font-weight: bold;
+  color: rgb(80, 79, 79);
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 13px;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreInfo > span {
+  margin-right: 14px;
+}
+
+.socialMedia {
+  margin: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}

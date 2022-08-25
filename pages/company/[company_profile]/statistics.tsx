@@ -3,6 +3,7 @@ import ProfileViews from "../../../components/shared/profile_views";
 import StatisticContainer from "../../../components/shared/statistic_container";
 import StatisticsFilterFields from "../../../components/shared/statistics_filter_fields";
 import styles from "../../../styles/company profile/company_statistics.module.css";
+import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
 
 export default function CompanySettings() {
   return (
@@ -10,6 +11,7 @@ export default function CompanySettings() {
       <Head>
         <title>Company Statistics</title>
       </Head>
+      <UserOrCompanyHeader isCompany />
       <section className={styles.mainContainer}>
         <StatisticsFilterFields />
         <ProfileViews header="Company Profile Views" />

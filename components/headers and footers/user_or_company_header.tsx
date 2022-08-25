@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import TopLeftLogo from "../shared/top_left_logo";
-import classes from "./user_header.module.css";
+import classes from "./user_or_company_header.module.css";
 import SettingsIcon from "@mui/icons-material/Settings";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import ApartmentIcon from "@mui/icons-material/Apartment";
@@ -11,10 +11,12 @@ import HomeIcon from "@mui/icons-material/Home";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import styles from "./shared_styles.module.css";
+import WorkIcon from "@mui/icons-material/Work";
 import { Badge, Button, IconButton } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 
-export default function UserHeader(props: any) {
+export default function UserOrCompanyHeader(props: any) {
+  const { isCompany } = props;
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState(router.query.term);
 
@@ -63,15 +65,29 @@ export default function UserHeader(props: any) {
             <HomeIcon className={classes.buttonIcons} />
             <span>Home</span>
           </Button>
+          {isCompany ? (
+            <Button variant="text" className={classes.rightButton}>
+              <GroupIcon className={classes.buttonIcons} />
+              <span>Employees</span>
+            </Button>
+          ) : (
+            <Button variant="text" className={classes.rightButton}>
+              <ApartmentIcon className={classes.buttonIcons} />
+              <span>Companies</span>
+            </Button>
+          )}
+          {isCompany ? (
+            <Button variant="text" className={classes.rightButton}>
+              <WorkIcon className={classes.buttonIcons} />
+              <span>Job Applications</span>
+            </Button>
+          ) : (
+            <Button variant="text" className={classes.rightButton}>
+              <GroupIcon className={classes.buttonIcons} />
+              <span>Projects</span>
+            </Button>
+          )}
 
-          <Button variant="text" className={classes.rightButton}>
-            <ApartmentIcon className={classes.buttonIcons} />
-            <span>Companies</span>
-          </Button>
-          <Button variant="text" className={classes.rightButton}>
-            <GroupIcon className={classes.buttonIcons} />
-            <span>Projects</span>
-          </Button>
           <Button
             variant="text"
             className={classes.rightButton}
@@ -82,7 +98,12 @@ export default function UserHeader(props: any) {
               });
             }}
           >
-            <PersonIcon className={classes.buttonIcons} />
+            {isCompany ? (
+              <ApartmentIcon className={classes.buttonIcons} />
+            ) : (
+              <PersonIcon className={classes.buttonIcons} />
+            )}
+
             <span>Profile</span>
           </Button>
           <Button
