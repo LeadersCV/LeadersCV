@@ -3,6 +3,10 @@ import AddIcon from "@mui/icons-material/Add";
 import EditIcon from "@mui/icons-material/Edit";
 import { Fab } from "@mui/material";
 import sharedStyles from "../user profile/shared_style.module.css";
+import KFCImage from "../../public/assets/kfc.png";
+import KuduImage from "../../public/assets/kudu.png";
+import HerfyImage from "../../public/assets/herfy.png";
+import SingleClient from "./single_client";
 
 export default function CompanyClients(props: any) {
   const { isDifferentCompany } = props;
@@ -22,7 +26,13 @@ export default function CompanyClients(props: any) {
           </span>
         )}
       </div>
-      <div className={styles.clientsGrid}></div>
+      <div className={styles.clientsGrid}>
+        <SingleClient imageUrl={KFCImage} title="KFC" />
+        <SingleClient imageUrl={KuduImage} title="Judu" />
+        <SingleClient imageUrl={HerfyImage} title="Herfy" />
+        <SingleClient imageUrl={KFCImage} title="KFC" />
+        <SingleClient imageUrl={KFCImage} title="KFC" />
+      </div>
     </section>
   );
 }
