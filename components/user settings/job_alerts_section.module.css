@@ -1,0 +1,19 @@
+.jobAlertsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 0px;
+}
+
+.jobAlertsTile {
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobAlertsTile span {
+  font-size: 15px;
+  font-weight: bold;
+}

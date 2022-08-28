@@ -4,7 +4,7 @@ export default function TableOfContents(props: any) {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.tocContainer}>
-        <h1>Settings</h1>
+        <p className={styles.title}>Settings</p>
         <span
           className={`${styles.settingsSections} ${
             props.selectedSection === "Job Alerts" && styles.selected
@@ -18,6 +18,13 @@ export default function TableOfContents(props: any) {
           }`}
         >
           Security
+        </span>
+        <span
+          className={`${styles.settingsSections} ${
+            props.selectedSection === "Visibility" && styles.selected
+          }`}
+        >
+          Visibility
         </span>
         <span
           className={`${styles.settingsSections} ${
@@ -39,6 +46,13 @@ export default function TableOfContents(props: any) {
           }`}
         >
           Notifications
+        </span>
+        <span
+          className={`${styles.settingsSections} ${
+            props.selectedSection === "EmailSettings" && styles.selected
+          }`}
+        >
+          Email Settings
         </span>
         <span
           className={`${styles.settingsSections} ${

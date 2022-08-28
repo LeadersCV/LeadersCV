@@ -1,0 +1,19 @@
+.appearanceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 32px 0px;
+  padding-left: 16px;
+}
+
+.appearanceTile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appearanceTile span {
+  font-size: large;
+  font-weight: bold;
+}

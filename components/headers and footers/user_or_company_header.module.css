@@ -3,23 +3,23 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
   gap: 6px;
 }
 
 .allRightButtons {
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 2px;
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  width: 100wh;
 }
 
 .buttonIcons {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .iconButtons {
-  font-size: 30px;
+  font-size: 25px;
 }

@@ -1,0 +1,26 @@
+.mainContainer {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  padding: 8px;
+}
+
+.mainContainer h1 {
+  color: #002463;
+  font-size: 25px;
+}
+.statisticsNumbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 24px 0px;
+}
+/* .chartsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 24px 0px;
+} */

@@ -1,0 +1,50 @@
+.mainContainer {
+  width: 15%;
+}
+
+.tocContainer {
+  height: 300px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.settingsSections {
+  width: fit-content;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #8ba0c5;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.selected::before {
+  content: "";
+  position: absolute;
+  margin-top: 8px;
+  bottom: 0px;
+  width: 100%;
+  animation: 250ms ease-in-out 0s 1 beforeAnimation;
+  border: 2px solid #002463;
+}
+
+@keyframes beforeAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.selected {
+  font-weight: bold;
+  color: #002463;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #002463;
+}

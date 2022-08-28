@@ -1,0 +1,33 @@
+.resumesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 0px;
+}
+
+.resumesTile {
+  padding: 8px;
+  margin-left: 8px;
+  width: 50%;
+  background-color: #002463;
+  border-radius: 5px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.titleDate {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 12px 4px 0px;
+}
+
+.titleDate > :first-child {
+  font-weight: bold;
+}
+
+.titleDate > :nth-child(2) {
+  font-size: 14px;
+}

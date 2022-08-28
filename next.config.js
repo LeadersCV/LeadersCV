@@ -10,5 +10,4 @@ const nextConfig = {
   // basePath: "/LeadersCV",
   // assetPrefix: "/LeadersCV",
 };
-
 module.exports = nextConfig;

@@ -1,0 +1,28 @@
+.container {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: rgb(231, 231, 231);
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px rgb(187, 187, 187);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 5px 2px #002463;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 17px;
+  color: #002463;
+}
+
+.job {
+  font-size: 15px;
+  font-weight: 600;
+}
