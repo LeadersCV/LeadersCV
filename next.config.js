@@ -7,8 +7,8 @@ const nextConfig = {
     path: "",
   },
   // i18n,
-  basePath: "/LeadersCV",
-  assetPrefix: "/LeadersCV",
-}
+  // basePath: "/LeadersCV",
+  // assetPrefix: "/LeadersCV",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
