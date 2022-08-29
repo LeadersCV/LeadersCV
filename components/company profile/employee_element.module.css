@@ -19,10 +19,20 @@
 .name {
   font-weight: bold;
   font-size: 17px;
+  text-align: center;
+
   color: #002463;
 }
 
 .job {
-  font-size: 15px;
+  font-size: 75%;
   font-weight: 600;
+  text-align: center;
+}
+
+.actionsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

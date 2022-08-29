@@ -14,14 +14,44 @@ export default function CompanyEmployees() {
       <section className={styles.employeesContainer}>
         <input placeholder="Search" className={styles.searchField} />
         <div className={styles.listOfEmployees}>
-          <EmployeeElement name="hello" job="Software Engineer" />
-          <EmployeeElement name="hello" job="Writer" />
-          <EmployeeElement name="hello" job="Author" />
-          <EmployeeElement name="hello" job="Recruiter" />
-          <EmployeeElement name="hello" job="Software Engineer" />
-          <EmployeeElement name="hello" job="Software Engineer" />
-          <EmployeeElement name="hello" job="Software Engineer" />
-          <EmployeeElement name="hello" job="Software Engineer" />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement areActionsIncluded name="hello" job="Writer" />
+          <EmployeeElement areActionsIncluded name="hello" job="Author" />
+          <EmployeeElement areActionsIncluded name="hello" job="Recruiter" />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
+          <EmployeeElement
+            areActionsIncluded
+            name="hello"
+            job="Software Engineer"
+          />
         </div>
       </section>
     </Fragment>
