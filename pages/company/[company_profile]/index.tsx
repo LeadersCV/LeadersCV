@@ -11,6 +11,7 @@ import VisionSection from "../../../components/company profile/vision_section";
 import EmployeesSection from "../../../components/company profile/employees_section";
 import CompanyProducts from "../../../components/company profile/company_products";
 import CompanyClients from "../../../components/company profile/company_clients";
+import CompanyActions from "../../../components/company profile/company_actions";
 
 export default function CompanyProfile() {
   return (
@@ -49,7 +50,9 @@ export default function CompanyProfile() {
           <CompanyProducts />
           <CompanyClients />
         </div>
-        <div className={styles.suggestionsAndActions}></div>
+        <div className={styles.suggestionsAndActions}>
+          <CompanyActions />
+        </div>
       </section>
     </section>
   );
