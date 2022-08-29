@@ -32,7 +32,7 @@ export default function UserOrCompanyHeader(props: any) {
     return () => {
       document.removeEventListener("keydown", enterSearch);
     };
-  }, []);
+  });
 
   const search = () => {
     router.push({

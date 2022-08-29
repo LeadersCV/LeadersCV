@@ -44,7 +44,6 @@
 }
 
 .textField:focus {
-  width: 35%;
   border: 0.5px solid #002463;
 }
 
