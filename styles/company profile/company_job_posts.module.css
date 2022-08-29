@@ -1,5 +1,5 @@
-.interviewsContainer {
-  margin: 100px auto 70px auto;
+.jobPostsContainer {
+  margin: 100px auto;
   box-shadow: 0px 0px 12px 5px lightgrey;
   padding: 24px 52px;
   width: 65%;
@@ -21,6 +21,10 @@
   gap: 24px;
 }
 
+.toggleButtonStyle {
+  text-transform: initial;
+}
+
 .searchField {
   margin: 42px auto;
   width: 80%;
@@ -36,7 +40,7 @@
   font-size: 15px;
 }
 
-.interviewsList {
+.jobPostsList {
   width: 100%;
   display: flex;
   flex-direction: column;

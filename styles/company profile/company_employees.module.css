@@ -1,5 +1,5 @@
 .employeesContainer {
-  width: 70%;
+  width: 65%;
   margin: 100px auto;
   margin-top: 100px;
   border-radius: 10px;
@@ -11,8 +11,9 @@
 }
 
 .searchField {
-  margin: 42px 52px;
-  height: 55px;
+  margin: 42px auto;
+  height: 45px;
+  width: 80%;
   outline: none;
   border: none;
   background-color: rgb(250, 250, 250);
@@ -21,7 +22,7 @@
   padding-left: 12px;
   color: black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .listOfEmployees {

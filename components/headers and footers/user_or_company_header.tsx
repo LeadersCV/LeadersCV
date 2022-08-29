@@ -14,6 +14,9 @@ import styles from "./shared_styles.module.css";
 import WorkIcon from "@mui/icons-material/Work";
 import { Badge, Button, IconButton } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
+import Link from "next/link";
+import Image from "next/image";
+import websiteLogo from "../../public/assets/small_logo.png";
 
 export default function UserOrCompanyHeader(props: any) {
   const { isCompany } = props;
@@ -44,8 +47,26 @@ export default function UserOrCompanyHeader(props: any) {
   return (
     <nav className={styles.bar}>
       <section className={styles.leftSide}>
-        <div style={{ paddingLeft: "10px" }}>
-          <TopLeftLogo width="175px" height="45px" />
+        <div
+          style={{
+            paddingLeft: "10px",
+            paddingTop: "10px",
+            paddingBottom: "10px",
+          }}
+        >
+          <Link href="/">
+            <Image
+              src={"/" + websiteLogo.src}
+              width="25px"
+              height="35px"
+              alt="logo"
+              priority
+              style={{
+                cursor: "pointer",
+                paddingLeft: "10px",
+              }}
+            />
+          </Link>
         </div>
 
         <input
@@ -79,7 +100,7 @@ export default function UserOrCompanyHeader(props: any) {
           {isCompany ? (
             <Button variant="text" className={classes.rightButton}>
               <WorkIcon className={classes.buttonIcons} />
-              <span>Job Applications</span>
+              <span>Job Posts</span>
             </Button>
           ) : (
             <Button variant="text" className={classes.rightButton}>

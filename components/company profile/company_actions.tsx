@@ -54,7 +54,7 @@ export default function CompanyActions() {
           </ListItemButton>
         </ListItem>
       </Link>
-      <Link href={"/company/" + path[2] + "/job-applications"}>
+      <Link href={"/company/" + path[2] + "/job-posts"}>
         <ListItem
           disablePadding
           sx={{
@@ -67,7 +67,7 @@ export default function CompanyActions() {
             <ListItemIcon color="primary" sx={{ color: "#002463" }}>
               <WorkIcon />
             </ListItemIcon>
-            <ListItemText disableTypography>Job Applications</ListItemText>
+            <ListItemText disableTypography>Job Posts</ListItemText>
           </ListItemButton>
         </ListItem>
       </Link>

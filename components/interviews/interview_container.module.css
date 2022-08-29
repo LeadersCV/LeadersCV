@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding-bottom: 12px;
+  justify-content: center;
+  padding-bottom: 24px;
   border-bottom: 0.5px solid lightgray;
-  width: 100%;
+  width: 75%;
 }
 
 .infoColumn {
@@ -14,13 +14,44 @@
   align-items: flex-start;
 }
 
-.interviewType {
+.interviewTitle {
   font-size: large;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .date {
   color: gray;
+  font-weight: bold;
   margin: 8px 0px;
   font-size: 12px;
+}
+
+.infoRow {
+  margin: 4px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoRow > span {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+
+.infoRow > span:first-child {
+  font-size: 13px;
+  margin-right: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+.actionsColumn {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: center;
+
+  justify-content: space-around;
 }

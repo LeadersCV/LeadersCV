@@ -16,10 +16,16 @@
   margin-left: auto;
 }
 
+.allRightButtons span {
+  font-family: "Oswald";
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .buttonIcons {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .iconButtons {
-  font-size: 20px;
+  font-size: 25px;
 }
