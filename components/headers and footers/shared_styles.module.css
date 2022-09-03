@@ -4,11 +4,12 @@
   top: 0px;
   z-index: 1500;
   height: 55px;
+  padding: 0% 15%;
   background-color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
   border-bottom: 1px solid #afafaf;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
   -webkit-box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
   -moz-box-shadow: -2px 1px 8px -4px rgba(18, 18, 18, 0.75);
@@ -23,13 +24,13 @@
 
 .leftSide {
   display: flex;
-  width: 80%;
+  width: 45%;
   align-items: center;
 }
 
 .textField {
   height: 35px;
-  width: 25%;
+  width: 50%;
   border-radius: 0px;
   outline: none;
   border: none;
@@ -38,7 +39,7 @@
   font-size: 16px;
   font-weight: 600;
   background-color: #ffffff;
-
+  font-family: "Oswald";
   color: #002463;
   transition: width 500ms ease-in-out;
 }
@@ -56,7 +57,7 @@
   border: none;
   border-radius: 0px 5px 5px 0px;
   background-color: #002463;
-
+  font-family: "Oswald";
   font-weight: bold;
   font-size: 16px;
   padding: 0px;

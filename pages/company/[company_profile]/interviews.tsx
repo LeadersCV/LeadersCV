@@ -35,55 +35,89 @@ export default function CompanyInterviewsPage() {
       <section className={styles.interviewsContainer}>
         <input placeholder="Search" className={styles.searchField} />
         <div className={styles.filters}>
-          <ToggleButtonGroup
-            color="primary"
-            value={status}
-            exclusive
-            onChange={handleStatusChange}
-            aria-label="Platform"
-          >
-            <ToggleButton size="small" value="ALL">
-              ALL
-            </ToggleButton>
-            <ToggleButton size="small" value="Next 24 hours">
-              Next 24 hours
-            </ToggleButton>
-            <ToggleButton size="small" value="Next 7 days">
-              Next 7 days
-            </ToggleButton>
-            <ToggleButton size="small" value="Next Month">
-              Next Month
-            </ToggleButton>
-            <ToggleButton size="small" value="Last 24 hours">
-              Last 24 hours
-            </ToggleButton>
-            <ToggleButton size="small" value="Last 7 days">
-              Last 7 days
-            </ToggleButton>
-            <ToggleButton size="small" value="Last Month">
-              Last Month
-            </ToggleButton>
-          </ToggleButtonGroup>
-          <ToggleButtonGroup
-            color="primary"
-            value={period}
-            exclusive
-            onChange={handleTimeChange}
-            aria-label="Platform"
-          >
-            <ToggleButton size="small" value="All">
-              All
-            </ToggleButton>
-            <ToggleButton size="small" value="Cancelled">
-              Cancelled
-            </ToggleButton>
-            <ToggleButton size="small" value="Scheduled">
-              Scheduled
-            </ToggleButton>
-            <ToggleButton size="small" value="Done">
-              Done
-            </ToggleButton>
-          </ToggleButtonGroup>
+          <div className={styles.filterColumn}>
+            <span>Period</span>
+            <ToggleButtonGroup
+              color="primary"
+              value={status}
+              exclusive
+              onChange={handleStatusChange}
+              aria-label="Platform"
+              sx={{
+                "& .Mui-selected": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+                "& .Mui-ToggleButton": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+                "& .Mui-selected:hover": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+              }}
+            >
+              <ToggleButton size="small" value="ALL">
+                ALL
+              </ToggleButton>
+              <ToggleButton size="small" value="Next 24 hours">
+                Next 24 hours
+              </ToggleButton>
+              <ToggleButton size="small" value="Next 7 days">
+                Next 7 days
+              </ToggleButton>
+              <ToggleButton size="small" value="Next Month">
+                Next Month
+              </ToggleButton>
+              <ToggleButton size="small" value="Last 24 hours">
+                Last 24 hours
+              </ToggleButton>
+              <ToggleButton size="small" value="Last 7 days">
+                Last 7 days
+              </ToggleButton>
+              <ToggleButton size="small" value="Last Month">
+                Last Month
+              </ToggleButton>
+            </ToggleButtonGroup>
+          </div>
+          <div className={styles.filterColumn}>
+            <span>Status</span>
+            <ToggleButtonGroup
+              color="primary"
+              value={period}
+              exclusive
+              onChange={handleTimeChange}
+              aria-label="Platform"
+              sx={{
+                "& .Mui-selected": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+                "& .Mui-ToggleButton": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+                "& .Mui-selected:hover": {
+                  backgroundColor: "#002463",
+                  color: "white",
+                },
+              }}
+            >
+              <ToggleButton size="small" value="All">
+                All
+              </ToggleButton>
+              <ToggleButton size="small" value="Cancelled">
+                Cancelled
+              </ToggleButton>
+              <ToggleButton size="small" value="Scheduled">
+                Scheduled
+              </ToggleButton>
+              <ToggleButton size="small" value="Done">
+                Done
+              </ToggleButton>
+            </ToggleButtonGroup>
+          </div>
         </div>
         <div className={styles.interviewsList}>
           <InterviewContainer

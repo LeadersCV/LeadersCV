@@ -80,7 +80,8 @@ export default function UserOrCompanyHeader(props: any) {
         <button className={styles.searchButton} onClick={() => search()}>
           Search
         </button>
-
+      </section>
+      <section>
         <div className={classes.allRightButtons}>
           <Button variant="text" className={classes.rightButton}>
             <HomeIcon className={classes.buttonIcons} />

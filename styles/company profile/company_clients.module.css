@@ -1,4 +1,4 @@
-.jobPostsContainer {
+.clientsContainer {
   margin: 100px auto;
   box-shadow: 0px 0px 12px 5px lightgrey;
   padding: 24px 52px;
@@ -32,10 +32,6 @@
   font-weight: bold;
 }
 
-.toggleButtonStyle {
-  text-transform: capitalize;
-}
-
 .searchField {
   margin: 42px auto;
   width: 80%;
@@ -50,12 +46,20 @@
   font-weight: bold;
   font-size: 15px;
   font-family: "Oswald";
+  transition: 250ms ease-in-out box-shadow;
 }
 
-.jobPostsList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+.searchField:hover {
+  box-shadow: 0px 0px 10px 2px darkgray;
+}
+
+.searchField:focus {
+  box-shadow: 0px 0px 5px 2px #002463;
+}
+
+.listOfClients {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2vw;
+  row-gap: 3vh;
 }

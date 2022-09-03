@@ -44,10 +44,10 @@ export default function InterviewContainer(props: any) {
             <Chip
               label="Cancelled"
               size="small"
+              color="error"
               sx={{
                 fontSize: "12px",
                 color: "white",
-                backgroundColor: "red",
                 fontWeight: "bold",
               }}
             />
@@ -58,7 +58,7 @@ export default function InterviewContainer(props: any) {
               size="small"
               icon={<AccessTimeFilledIcon />}
               color="secondary"
-              sx={{ fontSize: "12px", color: "black", fontWeight: "bold" }}
+              sx={{ fontSize: "12px", color: "white", fontWeight: "bold" }}
             />
           )}
         </Stack>
