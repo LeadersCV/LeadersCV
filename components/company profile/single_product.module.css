@@ -25,6 +25,14 @@
   max-lines: 2;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 14px;
   line-clamp: 2;
   max-height: 3em;
+}
+
+.actionsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

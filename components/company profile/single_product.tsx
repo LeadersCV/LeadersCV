@@ -1,8 +1,12 @@
 import Image from "next/image";
 import styles from "./single_product.module.css";
+import { IconButton } from "@mui/material";
+
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 
 export default function SingleProduct(props: any) {
-  const { title, imageUrl, description } = props;
+  const { title, imageUrl, description, areActionsIncluded } = props;
 
   return (
     <div className={styles.container}>
@@ -16,6 +20,17 @@ export default function SingleProduct(props: any) {
       />
       <span className={styles.title}>{title}</span>
       <span className={styles.description}>{description}</span>
+      {areActionsIncluded && (
+        <div className={styles.actionsRow}>
+          <IconButton aria-label="delete" size="medium" color="primary">
+            <DeleteIcon fontSize="inherit" />
+          </IconButton>
+
+          <IconButton aria-label="delete" size="medium" color="primary">
+            <EditIcon fontSize="inherit" />
+          </IconButton>
+        </div>
+      )}
     </div>
   );
 }

@@ -122,7 +122,7 @@ export default function CompanyActions() {
           </ListItemButton>
         </ListItem>
       </Link>
-      <Link href={"/company/" + path[2] + "/blogs"}>
+      <Link href={"/messaging"}>
         <ListItem
           disablePadding
           sx={{

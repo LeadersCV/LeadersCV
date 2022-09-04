@@ -1,8 +1,8 @@
-.clientsContainer {
+.productsContainer {
   margin: 100px auto;
   box-shadow: 0px 0px 12px 5px lightgrey;
   padding: 24px 52px;
-  width: 55%;
+  width: 65%;
   border-radius: 10px;
 
   display: flex;
@@ -61,9 +61,9 @@
   box-shadow: 0px 0px 5px 2px #002463;
 }
 
-.listOfClients {
+.listOfProducts {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 2vw;
   row-gap: 3vh;
 }

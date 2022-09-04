@@ -1,8 +1,8 @@
-.clientsContainer {
+.blogsContainer {
   margin: 100px auto;
   box-shadow: 0px 0px 12px 5px lightgrey;
   padding: 24px 52px;
-  width: 55%;
+  width: 65%;
   border-radius: 10px;
 
   display: flex;
@@ -12,7 +12,7 @@
 }
 
 .filters {
-  margin: 0px 0px 42px 0px;
+  margin: 0px 0px 24px 0px;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -61,9 +61,10 @@
   box-shadow: 0px 0px 5px 2px #002463;
 }
 
-.listOfClients {
+.listOfBlogs {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2vw;
   row-gap: 3vh;
 }

@@ -4,7 +4,7 @@ import UserOrCompanyHeader from "../../../components/headers and footers/user_or
 import Head from "next/head";
 import InterviewContainer, {
   InterviewType,
-} from "../../../components/interviews/interview_container";
+} from "../../../components/company interviews/interview_container";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
 
@@ -48,10 +48,6 @@ export default function CompanyInterviewsPage() {
                   backgroundColor: "#002463",
                   color: "white",
                 },
-                "& .Mui-ToggleButton": {
-                  backgroundColor: "#002463",
-                  color: "white",
-                },
                 "& .Mui-selected:hover": {
                   backgroundColor: "#002463",
                   color: "white",
@@ -91,10 +87,6 @@ export default function CompanyInterviewsPage() {
               aria-label="Platform"
               sx={{
                 "& .Mui-selected": {
-                  backgroundColor: "#002463",
-                  color: "white",
-                },
-                "& .Mui-ToggleButton": {
                   backgroundColor: "#002463",
                   color: "white",
                 },

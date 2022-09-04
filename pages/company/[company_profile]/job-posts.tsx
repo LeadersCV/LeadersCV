@@ -49,16 +49,12 @@ export default function CompanyJobPostsPage() {
             <span>Period</span>
             <ToggleButtonGroup
               color="primary"
-              value={status}
+              value={period}
               exclusive
-              onChange={handleStatusChange}
+              onChange={handleTimeChange}
               aria-label="status"
               sx={{
                 "& .Mui-selected": {
-                  backgroundColor: "#002463",
-                  color: "white",
-                },
-                "& .Mui-ToggleButton": {
                   backgroundColor: "#002463",
                   color: "white",
                 },
@@ -84,15 +80,11 @@ export default function CompanyJobPostsPage() {
             <span>Status</span>
             <ToggleButtonGroup
               color="primary"
-              value={period}
+              value={status}
               exclusive
-              onChange={handleTimeChange}
+              onChange={handleStatusChange}
               sx={{
                 "& .Mui-selected": {
-                  backgroundColor: "#002463",
-                  color: "white",
-                },
-                "& .Mui-ToggleButton": {
                   backgroundColor: "#002463",
                   color: "white",
                 },
