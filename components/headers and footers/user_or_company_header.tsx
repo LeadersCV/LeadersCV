@@ -155,17 +155,20 @@ export default function UserOrCompanyHeader(props: any) {
             <SettingsIcon className={classes.buttonIcons} />
             <span>Settings</span>
           </Button>
-          <IconButton color="primary" aria-label="add to shopping cart">
-            <Badge badgeContent={2} color="primary">
-              <ChatBubbleIcon style={{ fontSize: "25px" }} />
-            </Badge>
-          </IconButton>
-          <IconButton color="primary" aria-label="add to shopping cart">
-            <Badge badgeContent={4} color="primary">
-              <NotificationsIcon style={{ fontSize: "25px" }} />
-            </Badge>
-          </IconButton>
-
+          <Link href="/messaging">
+            <IconButton color="primary" aria-label="add to shopping cart">
+              <Badge badgeContent={2} color="primary">
+                <ChatBubbleIcon style={{ fontSize: "25px" }} />
+              </Badge>
+            </IconButton>
+          </Link>
+          <Link href="/notifications">
+            <IconButton color="primary" aria-label="add to shopping cart">
+              <Badge badgeContent={4} color="primary">
+                <NotificationsIcon style={{ fontSize: "25px" }} />
+              </Badge>
+            </IconButton>
+          </Link>
           <IconButton color="primary" aria-label="add to shopping cart">
             <LogoutIcon style={{ fontSize: "25px" }} />
           </IconButton>

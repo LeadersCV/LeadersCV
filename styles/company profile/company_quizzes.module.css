@@ -1,0 +1,77 @@
+.quizzesSection {
+  min-height: 82vh;
+  margin: 100px auto;
+  box-shadow: 0px 0px 12px 5px lightgrey;
+  padding: 24px 52px;
+  width: 65%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchField {
+  margin: 42px 0px;
+  width: 60%;
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px 2px darkgray;
+  border-radius: 5px;
+  padding-left: 12px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Oswald";
+  transition: 250ms ease-in-out box-shadow;
+}
+
+.searchAndAddContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.addButton {
+  height: 45px;
+}
+
+.filters {
+  margin: 0px 0px 42px 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.filterColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.filterColumn > span {
+  font-weight: bold;
+}
+
+.quizzesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 12px;
+}
+
+.toggleButtonStyle {
+  text-transform: capitalize;
+}

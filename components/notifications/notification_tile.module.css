@@ -1,0 +1,46 @@
+.tile {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 16px;
+  align-items: center;
+
+  border-bottom: 0.5px solid rgb(202, 202, 202);
+}
+
+.tile:hover {
+  cursor: pointer;
+}
+
+.leadingIcon {
+  font-size: 56px;
+  margin-right: 8px;
+}
+
+.tile > span:last-child {
+  margin-left: auto;
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+}
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.unRead {
+  background-color: rgba(0, 36, 99, 0.2);
+}
+
+.unRead:hover {
+  background-color: rgba(0, 36, 99, 0.4);
+}
+
+.read {
+  background-color: rgb(235, 235, 235);
+}
+
+.read:hover {
+  background-color: rgb(200, 200, 200);
+}

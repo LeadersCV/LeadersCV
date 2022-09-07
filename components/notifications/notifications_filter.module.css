@@ -1,0 +1,22 @@
+.filterTypContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 12px;
+  height: fit-content;
+  position: fixed;
+  box-shadow: 0px 0px 5px 2px rgb(175, 175, 175);
+  width: 15%;
+  gap: 12px;
+}
+
+.filterContainer > span:first-child {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.mainContainer {
+  width: 15%;
+  height: fit-content;
+}

@@ -4,6 +4,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import QuizIcon from "@mui/icons-material/Quiz";
 import styles from "./company_actions.module.css";
 import CategoryIcon from "@mui/icons-material/Category";
 import ListItem from "@mui/material/ListItem";
@@ -51,6 +52,23 @@ export default function CompanyActions() {
               <Diversity3Icon />
             </ListItemIcon>
             <ListItemText disableTypography>Interviews</ListItemText>
+          </ListItemButton>
+        </ListItem>
+      </Link>
+      <Link href={"/company/" + path[2] + "/quizzes"}>
+        <ListItem
+          disablePadding
+          sx={{
+            backgroundColor: "rgb(239, 239, 239)",
+            color: "#002463",
+            fontWeight: "bold",
+          }}
+        >
+          <ListItemButton color="primary">
+            <ListItemIcon color="primary" sx={{ color: "#002463" }}>
+              <QuizIcon />
+            </ListItemIcon>
+            <ListItemText disableTypography>Quizzes</ListItemText>
           </ListItemButton>
         </ListItem>
       </Link>

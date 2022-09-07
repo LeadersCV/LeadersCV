@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 4px 8px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid lightgray;
+}
+
+.actionsColumn {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.details:first-child {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.infoRow {
+  margin: 4px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infoRow > span {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+
+.infoRow > span:first-child {
+  font-size: 13px;
+  margin-right: 12px;
+  font-weight: bold;
+  color: black;
+}
