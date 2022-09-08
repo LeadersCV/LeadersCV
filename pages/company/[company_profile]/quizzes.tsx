@@ -9,7 +9,6 @@ import CompanyQuizTile, {
 } from "../../../components/quizzes/company_quiz_tile";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
-import { useRouter } from "next/router";
 
 enum periodFilters {
   all = "All",

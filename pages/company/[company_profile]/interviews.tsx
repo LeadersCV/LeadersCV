@@ -2,6 +2,9 @@ import { Fragment, useState } from "react";
 import styles from "../../../styles/company profile/company_interviews.module.css";
 import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
 import Head from "next/head";
+import { Button, Link } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+
 import InterviewContainer, {
   InterviewType,
 } from "../../../components/company interviews/interview_container";
@@ -33,7 +36,19 @@ export default function CompanyInterviewsPage() {
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.interviewsContainer}>
-        <input placeholder="Search" className={styles.searchField} />
+        <div className={styles.searchAndAddContainer}>
+          <input placeholder="Search" className={styles.searchField} />
+          <Link href="/create-an-interview">
+            <Button
+              variant="contained"
+              className={styles.addButton}
+              endIcon={<AddIcon />}
+            >
+              Create an interview
+            </Button>
+          </Link>
+        </div>
+
         <div className={styles.filters}>
           <div className={styles.filterColumn}>
             <span>Period</span>
