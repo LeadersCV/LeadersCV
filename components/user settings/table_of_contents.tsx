@@ -1,10 +1,11 @@
 import styles from "./table_of_contents.module.css";
+import PostAddIcon from "@mui/icons-material/PostAdd";
 
 export default function TableOfContents(props: any) {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.tocContainer}>
-        <p className={styles.title}>Settings</p>
+        <span className={styles.title}>Settings</span>
         <span
           className={`${styles.settingsSections} ${
             props.selectedSection === "Job Alerts" && styles.selected

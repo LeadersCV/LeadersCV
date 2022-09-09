@@ -6,6 +6,8 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
 import SingleProduct from "../../../components/company profile/single_product";
 import userCover from "../../../public/assets/user_cover.png";
+import { Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 
 enum periodFilters {
   all = "All",
@@ -32,7 +34,13 @@ export default function CompanyProductsPage() {
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.productsContainer}>
-        <input placeholder="Search" className={styles.searchField} />
+        <div className={styles.searchAndAddRow}>
+          <input placeholder="Search" className={styles.searchField} />
+          <Button variant="contained" endIcon={<AddIcon />}>
+            Add a product
+          </Button>
+        </div>
+
         <div className={styles.filters}>
           <div className={styles.filters}>
             <div className={styles.filterColumn}>

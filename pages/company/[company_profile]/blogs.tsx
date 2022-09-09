@@ -5,6 +5,9 @@ import styles from "../../../styles/company profile/company_blogs.module.css";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import ToggleButton from "@mui/material/ToggleButton";
 import SingleBlog from "../../../components/blogs/single_blog";
+import { Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import Link from "next/link";
 
 enum periodFilters {
   all = "All",
@@ -31,7 +34,15 @@ export default function CompanyBlogsPage() {
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.blogsContainer}>
-        <input placeholder="Search" className={styles.searchField} />
+        <div className={styles.searchAndAddRow}>
+          <input placeholder="Search" className={styles.searchField} />
+          <Link href="/create-a-blog">
+            <Button variant="contained" endIcon={<AddIcon />}>
+              Create A Blog
+            </Button>
+          </Link>
+        </div>
+
         <div className={styles.filters}>
           <div className={styles.filters}>
             <div className={styles.filterColumn}>

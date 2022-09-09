@@ -13,7 +13,7 @@
 .settingsSections {
   width: fit-content;
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: #8ba0c5;
   position: relative;
   padding-bottom: 8px;
@@ -47,4 +47,5 @@
   font-size: 30px;
   font-weight: bold;
   color: #002463;
+  margin-bottom: 12px;
 }

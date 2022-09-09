@@ -10,3 +10,18 @@
   font-weight: 500;
   color: rgb(80, 79, 79);
 }
+
+.missionEditTextField {
+  outline: none;
+  height: 200px;
+  font-size: 14px;
+  width: 28vw;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-top: 8px;
+  font-weight: bold;
+  margin: 12px 0px;
+  font-family: "Oswald";
+  box-shadow: 0px 0px 12px 5px rgb(200, 200, 200);
+  border: none;
+}

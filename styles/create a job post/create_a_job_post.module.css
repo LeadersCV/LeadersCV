@@ -1,19 +1,32 @@
-.createAnInterviewSection {
+.createAJobPostSection {
   min-height: 82vh;
   margin: 100px auto;
   box-shadow: 0px 0px 12px 5px lightgrey;
   padding: 24px 64px;
   width: 55%;
   border-radius: 10px;
-  gap: 24px;
+  gap: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
+.formSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  gap: 12px;
+}
+
+.formSection > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .actionsRow {
-  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,52 +35,29 @@
   gap: 8px;
 }
 
-.radioOptions {
-  display: flex;
-  flex-direction: row;
-}
-
 .inputField {
   outline: none;
-  height: 35px;
+  height: 40px;
   font-size: 14px;
+  width: 70%;
   border-radius: 5px;
   padding-left: 8px;
+  font-weight: bold;
   font-family: "Oswald";
   box-shadow: 0px 0px 4px 3px rgb(225, 225, 225);
   border: none;
 }
 
-.scheduleRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-}
-
-.interviewerSection {
-  display: flex;
+.areaField {
+  outline: none;
+  height: max-content;
   width: 100%;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.labels {
-  font-weight: bold;
-}
-
-.notice {
-  margin: 0px auto;
-  margin-top: 12px;
   font-size: 14px;
-  color: gray;
-}
-
-.searchAndAddRow {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  gap: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 150px;
+  padding: 8px;
+  font-family: "Oswald";
+  box-shadow: 0px 0px 4px 3px rgb(225, 225, 225);
+  border: none;
 }

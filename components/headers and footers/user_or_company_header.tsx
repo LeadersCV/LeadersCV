@@ -21,6 +21,7 @@ import websiteLogo from "../../public/assets/small_logo.png";
 export default function UserOrCompanyHeader(props: any) {
   const { isCompany } = props;
   const router = useRouter();
+  const path: string[] = router.asPath.split("/");
   const [searchTerm, setSearchTerm] = useState(router.query.term);
 
   const enterSearch = (event: KeyboardEvent) => {
@@ -88,10 +89,12 @@ export default function UserOrCompanyHeader(props: any) {
             <span>Home</span>
           </Button>
           {isCompany ? (
-            <Button variant="text" className={classes.rightButton}>
-              <GroupIcon className={classes.buttonIcons} />
-              <span>Employees</span>
-            </Button>
+            <Link href={"/company/" + path[2] + "/employees"}>
+              <Button variant="text" className={classes.rightButton}>
+                <GroupIcon className={classes.buttonIcons} />
+                <span>Employees</span>
+              </Button>
+            </Link>
           ) : (
             <Button variant="text" className={classes.rightButton}>
               <ApartmentIcon className={classes.buttonIcons} />
@@ -99,10 +102,12 @@ export default function UserOrCompanyHeader(props: any) {
             </Button>
           )}
           {isCompany ? (
-            <Button variant="text" className={classes.rightButton}>
-              <WorkIcon className={classes.buttonIcons} />
-              <span>Job Posts</span>
-            </Button>
+            <Link href={"/company/" + path[2] + "/job-posts"}>
+              <Button variant="text" className={classes.rightButton}>
+                <WorkIcon className={classes.buttonIcons} />
+                <span>Job Posts</span>
+              </Button>
+            </Link>
           ) : (
             <Button variant="text" className={classes.rightButton}>
               <GroupIcon className={classes.buttonIcons} />
@@ -110,24 +115,21 @@ export default function UserOrCompanyHeader(props: any) {
             </Button>
           )}
 
-          <Button
-            variant="text"
-            className={classes.rightButton}
-            onClick={() => {
-              const path: string[] = router.asPath.split("/");
-              router.push({
-                pathname: "/user/" + path[2],
-              });
-            }}
+          <Link
+            href={
+              path[1] == "user" ? "/user/" + path[2] : "/company/" + path[2]
+            }
           >
-            {isCompany ? (
-              <ApartmentIcon className={classes.buttonIcons} />
-            ) : (
-              <PersonIcon className={classes.buttonIcons} />
-            )}
+            <Button variant="text" className={classes.rightButton}>
+              {isCompany ? (
+                <ApartmentIcon className={classes.buttonIcons} />
+              ) : (
+                <PersonIcon className={classes.buttonIcons} />
+              )}
 
-            <span>Profile</span>
-          </Button>
+              <span>Profile</span>
+            </Button>
+          </Link>
           <Button
             variant="text"
             className={classes.rightButton}

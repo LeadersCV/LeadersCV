@@ -33,7 +33,7 @@
 }
 
 .searchField {
-  margin: 42px auto;
+  margin: 42px 0px;
   width: 80%;
   height: 45px;
   outline: none;
@@ -66,4 +66,13 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2vw;
   row-gap: 3vh;
+}
+
+.searchAndAddRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }

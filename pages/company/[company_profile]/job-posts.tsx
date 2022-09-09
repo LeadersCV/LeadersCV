@@ -9,6 +9,9 @@ import CompanyJobPost, {
   jobType,
 } from "../../../components/company job posts/company_job_post";
 import Head from "next/head";
+import { Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+import Link from "next/link";
 
 const periods: Array<string> = [
   "All",
@@ -43,7 +46,15 @@ export default function CompanyJobPostsPage() {
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.jobPostsContainer}>
-        <input placeholder="Search" className={styles.searchField} />
+        <div className={styles.searchAndAddRow}>
+          <input placeholder="Search" className={styles.searchField} />
+          <Link href="/create-a-job-post">
+            <Button variant="contained" endIcon={<AddIcon />}>
+              Create a Job Post
+            </Button>
+          </Link>
+        </div>
+
         <div className={styles.filters}>
           <div className={styles.filterColumn}>
             <span>Period</span>

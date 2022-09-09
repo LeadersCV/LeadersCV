@@ -8,6 +8,8 @@ import KFCImage from "../../../public/assets/kfc.png";
 import KuduImage from "../../../public/assets/kudu.png";
 import HerfyImage from "../../../public/assets/herfy.png";
 import SingleClient from "../../../components/company profile/single_client";
+import { Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 
 enum periodFilters {
   all = "All",
@@ -34,7 +36,13 @@ export default function CompanyClientsPage() {
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.clientsContainer}>
-        <input placeholder="Search" className={styles.searchField} />
+        <div className={styles.searchAndAddRow}>
+          <input placeholder="Search" className={styles.searchField} />
+          <Button variant="contained" endIcon={<AddIcon />}>
+            Add A Client
+          </Button>
+        </div>
+
         <div className={styles.filters}>
           <div className={styles.filterColumn}>
             <span>Period</span>

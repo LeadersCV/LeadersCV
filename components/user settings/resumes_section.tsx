@@ -2,7 +2,8 @@ import styles from "./resumes_section.module.css";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import DeleteIcon from "@mui/icons-material/Delete";
 import PhotoIcon from "@mui/icons-material/Photo";
-import { IconButton } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
+import PostAddIcon from "@mui/icons-material/PostAdd";
 
 export default function ResumesSection() {
   return (
@@ -37,6 +38,9 @@ export default function ResumesSection() {
           <DeleteIcon sx={{ color: "white" }} />
         </IconButton>
       </div>
+      <Button variant="outlined" startIcon={<PostAddIcon />}>
+        Create your own Resume
+      </Button>
     </section>
   );
 }
