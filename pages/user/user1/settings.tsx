@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import UserOrCompanyHeader from "../../../components/headers and footers/user_or_company_header";
-import SettingsContent from "../../../components/User Settings/settings_content";
-import TableOfContents from "../../../components/User Settings/table_of_contents";
+import SettingsContent from "../../../components/user settings/settings_content";
+import TableOfContents from "../../../components/user settings/table_of_contents";
 import styles from "../../../styles/user profile/settings.module.css";
 
 export default function UserSettings() {
