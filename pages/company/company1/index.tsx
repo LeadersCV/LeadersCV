@@ -17,7 +17,7 @@ export default function CompanyProfile() {
   return (
     <section>
       <Head>
-        <title>Mhams Profile</title>
+        <title>Profile</title>
       </Head>
       <UserOrCompanyHeader isCompany />
       <section className={styles.mainContainer}>
